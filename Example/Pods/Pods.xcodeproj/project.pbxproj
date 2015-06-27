@@ -1,0 +1,1592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080E6C5C18B8CCBAD842E99C /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC27070C2C4DCE635809AEC /* BeEmpty.swift */; };
+		0881557D98807A381085512E /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90258639B0B68FAC5CCF6BD4 /* MatcherProtocols.swift */; };
+		0BB744E2B42D8521B3E2E350 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62F0CBE2A865AA7E25E0F7F /* Foundation.framework */; };
+		0C4158274AF3C5AE3841C799 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65978241BF04A898AB20114B /* BeCloseTo.swift */; };
+		0F73902E374B2704FF56700E /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A428AECB3FA3ADA6AD181C6 /* Poll.swift */; };
+		1418403E5B63638E713F9B29 /* Pods-NWAAlertController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5044D3D21C9DFE9AAED7A2 /* Pods-NWAAlertController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14CAE7197840828B271C6EB9 /* ObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48DFE4F1BAB6E878F847F90 /* ObjCMatcher.swift */; };
+		1A1DB8D17EB90CAE0323F523 /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = A04C78C2536B868C02F27FA0 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CB9B6E5D7AE48F48255714C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62F0CBE2A865AA7E25E0F7F /* Foundation.framework */; };
+		21C7FA5CA2E3A0B3546BF21F /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FFEB0C0D6EA8B77F28111B /* SourceLocation.swift */; };
+		222703BC33068E9721A94D81 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 58CA2D42788EE3C2F5B20D81 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		230B1E3CED8FE4575D401A3E /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7760C205613549EB749F0BC3 /* BeAKindOf.swift */; };
+		24188530893AC1337232A57A /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281EBFAFF9F4EC04BD522BA /* NimbleXCTestHandler.swift */; };
+		247E81DC84FD17101E8C0804 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291430D5378553A5A90D8D8 /* Closures.swift */; };
+		26FE36347257255F2AC6E5B9 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54237F70C629462494A23E1E /* ExampleMetadata.swift */; };
+		2B2E0A25D339DEB37316FB5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62F0CBE2A865AA7E25E0F7F /* Foundation.framework */; };
+		2D5D33F52F17EA3F987FC407 /* Pods-NWAAlertController_Tests-Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF787A7370E62983168AE1F2 /* Pods-NWAAlertController_Tests-Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DD058444B1AE4BD3903BC1E /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50A97AB444E56A8BA59DF2 /* Functional.swift */; };
+		2E3F6D890815BFD5B9BA029F /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBD9301843E85C6ED6054A /* Filter.swift */; };
+		31858213BDE188830BD90BE1 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2C60E06C6FCE58562E8A5 /* ExampleHooks.swift */; };
+		318F589EE0304B7EA187529C /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247C707F28BBCB48DF75328E /* Contain.swift */; };
+		350E892BD6D38A30C195A108 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AD0311B1291668A0E82C33 /* AllPass.swift */; };
+		386BE9652580D36A366416E0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF8E859806A7EB0F608999 /* Configuration.swift */; };
+		3919F9A8C9401E425514312C /* Pods-NWAAlertController_Tests-Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3A1A9DF80DF44E32EF497F /* Pods-NWAAlertController_Tests-Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E3882CA9EE37BECB55FE19B /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52B02B9DC2969EC46A6353 /* MatcherFunc.swift */; };
+		413AA8E13024F7F31A546825 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62F0CBE2A865AA7E25E0F7F /* Foundation.framework */; };
+		4307365E14D0306F78A70E79 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B16E0E32C5B711073AEB77 /* RaisesException.swift */; };
+		46013DDDFA72BB71EA0BB0FC /* Pods-NWAAlertController_Example-NWAAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 802CEDC492D65D463084E16A /* Pods-NWAAlertController_Example-NWAAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48B49030BD240A094DE14101 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A3A118EA89E19C8F1B852 /* BeGreaterThanOrEqualTo.swift */; };
+		48C713176905C71E12C9C533 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B84D7D01D221A975A99F2 /* BeIdenticalTo.swift */; };
+		4FE3084C2E7B690AE8335FCF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BF8DA7FB72B074E72DD6E /* ReplaceMe.swift */; };
+		51A1FAF2953E12F9D8FD7E8E /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AADE2AB55E85D72926ACF4F /* BeAnInstanceOf.swift */; };
+		54D92F773774B683FFA24917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62F0CBE2A865AA7E25E0F7F /* Foundation.framework */; };
+		5579C37E463B09C190883E3B /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CDB416326DE0D6C6926A2 /* SuiteHooks.swift */; };
+		581D96A3EB1BE974CF2FDAAB /* Pods-NWAAlertController_Tests-NWAAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CBE4D66F0FABF73770BC80 /* Pods-NWAAlertController_Tests-NWAAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A6EEB96771E4DFD1FC98170 /* Pods-NWAAlertController_Tests-Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B22AE15D0D83D8951B3A710 /* Pods-NWAAlertController_Tests-Quick-dummy.m */; };
+		5D6A1FC2DF467E49065FDC5E /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3DB3CA94FE363D7781D876 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E768463C626210690969557 /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EB84A97C2EDC009D6E626BC8 /* QuickSpec.m */; };
+		5EFE62312A240567E83A2BA7 /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 044226C4379E06BA708B8753 /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		604F79BE2D347C90502C8C8D /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E08DF26D90DB7D99CEC09EF /* Expectation.swift */; };
+		64B614B0A34B3267BE93D259 /* Pods-NWAAlertController_Example-NWAAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E45EA834E669C3A2DBBD05B /* Pods-NWAAlertController_Example-NWAAlertController-dummy.m */; };
+		6D67C9B8DF7A71134604EB20 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = ED042174AB4281E8712E9D09 /* NMBExceptionCapture.m */; };
+		76B0F1E5558E017C91540B00 /* ObjCExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43258EA4DA7629795F5302 /* ObjCExpectation.swift */; };
+		771C40EB1CD6ED059B9CFC84 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CD672A9289ADFBB91AA5F /* AssertionDispatcher.swift */; };
+		7C2AE70CAFA53F941A71C4C0 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ADED559D4D5188E2DB90BB /* Equal.swift */; };
+		86AE574D4DD3D82A9B82F4F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62F0CBE2A865AA7E25E0F7F /* Foundation.framework */; };
+		8E43AD9B63B39513569E9A5A /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D58747AE972954E66F32AA9 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91E41B7BB4017A39AF61CF56 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2389BCDBF22603A53BB6790 /* BeginWith.swift */; };
+		94469FB5049194B3EC48B714 /* Pods-NWAAlertController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF14B5CCDAC702A7B18FB026 /* Pods-NWAAlertController_Example-dummy.m */; };
+		95C1D9E12E34DA69533C0CF0 /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CDFF48B338C40F289BF616 /* NSString+QCKSelectorName.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		988D1FAEED0A218B7E9B254D /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = AB09D4891E5EAE2DD2873712 /* QuickConfiguration.m */; };
+		98D2181E3CB1EFFB5796B463 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759D078736741DF864F4A71 /* BeGreaterThan.swift */; };
+		98DA5442CC76DD7CD19A4B27 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF53A928863DCC1CBB413C2 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BB0D5B887F6A2402D30DAAD /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD502F4C37C2F3F19C76EB /* Example.swift */; };
+		9C99DA3F3BB1DE99FF17A30F /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053070D95F2F9E92E581D333 /* BeLessThanOrEqual.swift */; };
+		9CE4800D2628294A994AE665 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5BE1405600FA61FAE4F9A /* DSL.swift */; };
+		9DDBB1BCB09321E205F7998F /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2FB0B7435845EE1D898C31 /* AssertionRecorder.swift */; };
+		A1516122D166E8B2EED7EECC /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F9A089177032289BDBB7A9 /* BeLessThan.swift */; };
+		AC375E249F0B590A9D75953F /* NWAAlertController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4F13E09277F137165FD5E6B7 /* NWAAlertController.bundle */; };
+		ADD3C23A9E5CCCFFF4FE1638 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD945D79437E802979ED321 /* EndWith.swift */; };
+		AE8C07B16BCC98456E696622 /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 938CC047A8237621E16AE4C2 /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AF0CC350EB631888AE884C9D /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = AD75E4BA06448D4DC675D623 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF2D25DF9597BA0E925BCA4C /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101144A777914A379E141CA /* ExampleGroup.swift */; };
+		B8C4C58E4380CD4782635631 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9EAD2E95D55148BFC58EE7 /* World.swift */; };
+		BA437B2B27C04EBCFB753600 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C13CBC1A823C028B46535 /* Stringers.swift */; };
+		BCEC55E987322D526BE8B71E /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E61FD5F889FC0D4E11AE6 /* DSL+Wait.swift */; };
+		BD3B3A2B48AA58F21682193C /* Pods-NWAAlertController_Tests-Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FAA181A3BCB06037E5100 /* Pods-NWAAlertController_Tests-Nimble-dummy.m */; };
+		BF5B6802BDD73B7EB3D9E3B6 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE2E6526E98C58D8EA5C9B3 /* QCKDSL.m */; };
+		C76A3144BBD1348702973BAE /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2500758B21413C788B074 /* Match.swift */; };
+		C7A97F521D8FA56E551781B0 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8D936731E38C6A459D05F4 /* DSL.m */; };
+		CBB986B6C997AF0981ED629F /* NWAAlertController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35468A59C6B2A53883A3343C /* NWAAlertController.bundle */; };
+		CD56C14FD03E6250B24332A4 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A123FD6DF9C0FA91A43797 /* DSL.swift */; };
+		D3434C9C7D8ABB79D6CF6C4F /* Pods-NWAAlertController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A095104B2DA0DA195A71A10 /* Pods-NWAAlertController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF3C5A4FD7AA064F87E8EFFA /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2299EC86D05B702E0BE676 /* World+DSL.swift */; };
+		DF73D1A263923BD9A080EF0D /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82FBA3889A0AED4446C8CB1 /* FailureMessage.swift */; };
+		DFA3E87320F20D62EE17FF08 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592B262E327BE6634E0A63D /* AdapterProtocols.swift */; };
+		E3FC4B2748DC78810B6BA9A3 /* Pods-NWAAlertController_Tests-NWAAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAE54651FFEDEA655E2326C /* Pods-NWAAlertController_Tests-NWAAlertController-dummy.m */; };
+		E43C63062D775651B19C0395 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B822C6A17F88193DFDACDD2 /* BeNil.swift */; };
+		E52192DF3CB4C8C3D94F0665 /* World+DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7A21B6B372BF0297953913 /* World+DSL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E87515F04CA8EE14A3316D77 /* Pods-NWAAlertController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E43B2F18FE70D42859175FBD /* Pods-NWAAlertController_Tests-dummy.m */; };
+		EA876671C8651FF3CFB94E5E /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CBEFCBFC497C344795714 /* AsyncMatcherWrapper.swift */; };
+		EEB067CB07B1387EE5D9A81B /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18501704DD4CB4878E8FFB /* NSString+QCKSelectorName.m */; };
+		F2BA97471D66CD7BC6980205 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5ABE5E152D732EFB28475 /* BeLogical.swift */; };
+		F7AF91702891885BF68DF23B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44CC17D68AEA930CA8EFDCA /* XCTest.framework */; };
+		F8322DCE1B8B4BF835818113 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0D9BF0FF73BF5E4269C5E /* Expression.swift */; };
+		F99A298369547871A1B6787B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44CC17D68AEA930CA8EFDCA /* XCTest.framework */; };
+		FCFE4D5E31E82A81AB27623C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BF8DA7FB72B074E72DD6E /* ReplaceMe.swift */; };
+		FD6474AF8FE881FBC8FBBC07 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627F7F2A4F22303C447F5A8 /* Callsite.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8399433ECC4CF5F762E03097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5975701290AFF42D95A133BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10F18EC2F108801486FD0069;
+			remoteInfo = "Pods-NWAAlertController_Tests-NWAAlertController-NWAAlertController";
+		};
+		8A1396417F0076D57FBD664D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5975701290AFF42D95A133BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6539F14299AC11567DAF83F1;
+			remoteInfo = "Pods-NWAAlertController_Example-NWAAlertController";
+		};
+		B04685CFD273C07094F2B55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5975701290AFF42D95A133BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF635B75726A4F2B53CA1430;
+			remoteInfo = "Pods-NWAAlertController_Example-NWAAlertController-NWAAlertController";
+		};
+		B467A76D0195E698D1C92E3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5975701290AFF42D95A133BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EDB810D6F94800C151F5B95;
+			remoteInfo = "Pods-NWAAlertController_Tests-Quick";
+		};
+		BC52A191C936D0A72BD641E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5975701290AFF42D95A133BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 703F6C544422E1DD280512B8;
+			remoteInfo = "Pods-NWAAlertController_Tests-Nimble";
+		};
+		E4759D17DD4AB3855319D969 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5975701290AFF42D95A133BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25EBA86F9933B547FEA3473B;
+			remoteInfo = "Pods-NWAAlertController_Tests-NWAAlertController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044226C4379E06BA708B8753 /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Nimble/objc/DSL.h; sourceTree = "<group>"; };
+		053070D95F2F9E92E581D333 /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
+		06CDFF48B338C40F289BF616 /* NSString+QCKSelectorName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+QCKSelectorName.h"; path = "Quick/NSString+QCKSelectorName.h"; sourceTree = "<group>"; };
+		09AD0311B1291668A0E82C33 /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
+		0B22AE15D0D83D8951B3A710 /* Pods-NWAAlertController_Tests-Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NWAAlertController_Tests-Quick-dummy.m"; sourceTree = "<group>"; };
+		0D7CD672A9289ADFBB91AA5F /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
+		0F2299EC86D05B702E0BE676 /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
+		0F7DF9151B8869160F842CC8 /* Pods-NWAAlertController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NWAAlertController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0FBCFCD2E81EABED08DCF9BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FD945D79437E802979ED321 /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
+		14B86B8E75F5D31F9EA5CEA2 /* Pods-NWAAlertController_Tests-NWAAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-NWAAlertController_Tests-NWAAlertController.modulemap"; path = "../Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController.modulemap"; sourceTree = "<group>"; };
+		1B18501704DD4CB4878E8FFB /* NSString+QCKSelectorName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+QCKSelectorName.m"; path = "Quick/NSString+QCKSelectorName.m"; sourceTree = "<group>"; };
+		247C707F28BBCB48DF75328E /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
+		266678660343238E87B6508E /* Pods-NWAAlertController_Tests-Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Tests-Quick-prefix.pch"; sourceTree = "<group>"; };
+		27094CC3346740DBAFB8BCCC /* Pods-NWAAlertController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NWAAlertController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		29FB6AAA6EC1D7F425A339FE /* Pods-NWAAlertController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NWAAlertController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A095104B2DA0DA195A71A10 /* Pods-NWAAlertController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2AADE2AB55E85D72926ACF4F /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
+		2C3DB3CA94FE363D7781D876 /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Quick/Quick.h; sourceTree = "<group>"; };
+		2C52B02B9DC2969EC46A6353 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
+		2D8D936731E38C6A459D05F4 /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Nimble/objc/DSL.m; sourceTree = "<group>"; };
+		32CA26E98907BC1D3B52FC1B /* NWAAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NWAAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35468A59C6B2A53883A3343C /* NWAAlertController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NWAAlertController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B822C6A17F88193DFDACDD2 /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
+		3BA6E15377377FFEBE5E6961 /* Pods-NWAAlertController_Tests-Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Tests-Nimble.xcconfig"; sourceTree = "<group>"; };
+		3D58747AE972954E66F32AA9 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
+		44D2C60E06C6FCE58562E8A5 /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
+		44DFD11FC4E661C33B3B2D26 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		459C13CBC1A823C028B46535 /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
+		45F9A089177032289BDBB7A9 /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
+		49059D075A35237487318BD9 /* Pods-NWAAlertController_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Example-environment.h"; sourceTree = "<group>"; };
+		4A8563780C433224C7917DE7 /* Pods_NWAAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWAAlertController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D91C9D8322394BA8591D9FE /* Pods-NWAAlertController_Tests-Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Tests-Nimble-prefix.pch"; sourceTree = "<group>"; };
+		4F13E09277F137165FD5E6B7 /* NWAAlertController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NWAAlertController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C5ABE5E152D732EFB28475 /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
+		54237F70C629462494A23E1E /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
+		5424E1D3CF629CF0D84F8CD0 /* Pods-NWAAlertController_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Tests-environment.h"; sourceTree = "<group>"; };
+		55B16E0E32C5B711073AEB77 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
+		55CBE4D66F0FABF73770BC80 /* Pods-NWAAlertController_Tests-NWAAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-NWAAlertController_Tests-NWAAlertController-umbrella.h"; path = "../Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController-umbrella.h"; sourceTree = "<group>"; };
+		5627F7F2A4F22303C447F5A8 /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Quick/Callsite.swift; sourceTree = "<group>"; };
+		58CA2D42788EE3C2F5B20D81 /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Quick/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
+		5A428AECB3FA3ADA6AD181C6 /* Poll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poll.swift; path = Nimble/Utils/Poll.swift; sourceTree = "<group>"; };
+		6047699DDDA2208940F502C6 /* Pods_NWAAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWAAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60ADED559D4D5188E2DB90BB /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
+		632FAA181A3BCB06037E5100 /* Pods-NWAAlertController_Tests-Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NWAAlertController_Tests-Nimble-dummy.m"; sourceTree = "<group>"; };
+		65978241BF04A898AB20114B /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
+		676CBED40B703A90328F2454 /* Pods-NWAAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6933261F08CA10ADBCD74386 /* Pods-NWAAlertController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NWAAlertController_Tests-resources.sh"; sourceTree = "<group>"; };
+		6FE5BE1405600FA61FAE4F9A /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Quick/DSL/DSL.swift; sourceTree = "<group>"; };
+		7760C205613549EB749F0BC3 /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
+		7B2FB0B7435845EE1D898C31 /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
+		7E5044D3D21C9DFE9AAED7A2 /* Pods-NWAAlertController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Example-umbrella.h"; sourceTree = "<group>"; };
+		802CEDC492D65D463084E16A /* Pods-NWAAlertController_Example-NWAAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Example-NWAAlertController-umbrella.h"; sourceTree = "<group>"; };
+		80938065E3E7185CC82AF37A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		81599C4BBE9CCF2281B093E8 /* Pods-NWAAlertController_Tests-NWAAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWAAlertController_Tests-NWAAlertController.xcconfig"; path = "../Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController.xcconfig"; sourceTree = "<group>"; };
+		8172A8ACE0C41AB88004173C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-NWAAlertController_Tests-NWAAlertController/Info.plist"; sourceTree = "<group>"; };
+		834CBEFCBFC497C344795714 /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Nimble/Wrappers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
+		83A123FD6DF9C0FA91A43797 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
+		846BF8DA7FB72B074E72DD6E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		85EBD9301843E85C6ED6054A /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Quick/Filter.swift; sourceTree = "<group>"; };
+		885351A56F93A3031B205413 /* Pods-NWAAlertController_Tests-Quick-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Tests-Quick-Private.xcconfig"; sourceTree = "<group>"; };
+		90258639B0B68FAC5CCF6BD4 /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
+		9281EBFAFF9F4EC04BD522BA /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
+		938CC047A8237621E16AE4C2 /* World.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = World.h; path = Quick/World.h; sourceTree = "<group>"; };
+		946BB9150AAFCC9AD22D708B /* Pods-NWAAlertController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NWAAlertController_Tests.modulemap"; sourceTree = "<group>"; };
+		9759D078736741DF864F4A71 /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
+		9A7E61FD5F889FC0D4E11AE6 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
+		9AE3B6EEE094F0D58B04A5C3 /* Pods-NWAAlertController_Example-NWAAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Example-NWAAlertController.xcconfig"; sourceTree = "<group>"; };
+		9BE847F99523B8EC3A0E698B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C158C93C5BD995D6508E42D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DCB98BEC0C8627EC247E096 /* Pods-NWAAlertController_Tests-Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NWAAlertController_Tests-Quick.modulemap"; sourceTree = "<group>"; };
+		9E08DF26D90DB7D99CEC09EF /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Nimble/Expectation.swift; sourceTree = "<group>"; };
+		9E45EA834E669C3A2DBBD05B /* Pods-NWAAlertController_Example-NWAAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NWAAlertController_Example-NWAAlertController-dummy.m"; sourceTree = "<group>"; };
+		A04C78C2536B868C02F27FA0 /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Quick/DSL/QCKDSL.h; sourceTree = "<group>"; };
+		A08F5AB79C6B884E78243669 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A7629054756CD53E3AFD1C /* Pods-NWAAlertController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NWAAlertController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A101144A777914A379E141CA /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Quick/ExampleGroup.swift; sourceTree = "<group>"; };
+		A1A1CADBA5B58E4404F1CA77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24791683283108C37B0C369 /* Pods-NWAAlertController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NWAAlertController_Example.modulemap"; sourceTree = "<group>"; };
+		A44CC17D68AEA930CA8EFDCA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A61F796AADD62D822955A25D /* Pods-NWAAlertController_Example-NWAAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Example-NWAAlertController-prefix.pch"; sourceTree = "<group>"; };
+		A7AB39F8BEFB3E54E5E59C5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F2500758B21413C788B074 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
+		AB09D4891E5EAE2DD2873712 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Quick/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
+		ABE539872A7016D712F2AECB /* NWAAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NWAAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD75E4BA06448D4DC675D623 /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
+		AF14B5CCDAC702A7B18FB026 /* Pods-NWAAlertController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NWAAlertController_Example-dummy.m"; sourceTree = "<group>"; };
+		AF9EAD2E95D55148BFC58EE7 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
+		B0FFEB0C0D6EA8B77F28111B /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
+		B82FBA3889A0AED4446C8CB1 /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Nimble/FailureMessage.swift; sourceTree = "<group>"; };
+		BB4A3A118EA89E19C8F1B852 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		BF6DA8912634300615FC09A5 /* Pods-NWAAlertController_Tests-Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NWAAlertController_Tests-Nimble.modulemap"; sourceTree = "<group>"; };
+		C0F25E36AB9B4522FB082D87 /* Pods-NWAAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C65242305535AC3B94301BDB /* Pods-NWAAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C79195F029A6FCE6CFD84066 /* Pods-NWAAlertController_Tests-Nimble-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Tests-Nimble-Private.xcconfig"; sourceTree = "<group>"; };
+		CB3A1A9DF80DF44E32EF497F /* Pods-NWAAlertController_Tests-Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Tests-Quick-umbrella.h"; sourceTree = "<group>"; };
+		CD7A21B6B372BF0297953913 /* World+DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "World+DSL.h"; path = "Quick/DSL/World+DSL.h"; sourceTree = "<group>"; };
+		CDC27070C2C4DCE635809AEC /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
+		CF1CDB416326DE0D6C6926A2 /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
+		D06091778F02EB920F805075 /* Pods-NWAAlertController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NWAAlertController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D06E470F3600050AD2C1C913 /* Pods-NWAAlertController_Tests-NWAAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-NWAAlertController_Tests-NWAAlertController-prefix.pch"; path = "../Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController-prefix.pch"; sourceTree = "<group>"; };
+		D48DFE4F1BAB6E878F847F90 /* ObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCMatcher.swift; path = Nimble/Wrappers/ObjCMatcher.swift; sourceTree = "<group>"; };
+		D62F0CBE2A865AA7E25E0F7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DA43258EA4DA7629795F5302 /* ObjCExpectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCExpectation.swift; path = Nimble/ObjCExpectation.swift; sourceTree = "<group>"; };
+		DC83612624A21B01FB1CA724 /* Pods-NWAAlertController_Tests-Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Tests-Quick.xcconfig"; sourceTree = "<group>"; };
+		DCAE54651FFEDEA655E2326C /* Pods-NWAAlertController_Tests-NWAAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-NWAAlertController_Tests-NWAAlertController-dummy.m"; path = "../Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController-dummy.m"; sourceTree = "<group>"; };
+		DE50A97AB444E56A8BA59DF2 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
+		E43B2F18FE70D42859175FBD /* Pods-NWAAlertController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NWAAlertController_Tests-dummy.m"; sourceTree = "<group>"; };
+		E592B262E327BE6634E0A63D /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
+		E60B564C74C214F68FECE1AE /* Pods-NWAAlertController_Example-NWAAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NWAAlertController_Example-NWAAlertController.modulemap"; sourceTree = "<group>"; };
+		EB84A97C2EDC009D6E626BC8 /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Quick/QuickSpec.m; sourceTree = "<group>"; };
+		EBF53A928863DCC1CBB413C2 /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Nimble/objc/NMBExceptionCapture.h; sourceTree = "<group>"; };
+		ED042174AB4281E8712E9D09 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
+		ED2B972BFB093AEEB310C26D /* Pods-NWAAlertController_Example-NWAAlertController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Example-NWAAlertController-Private.xcconfig"; sourceTree = "<group>"; };
+		EF787A7370E62983168AE1F2 /* Pods-NWAAlertController_Tests-Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Tests-Nimble-umbrella.h"; sourceTree = "<group>"; };
+		EF9F10F97BF5F72E9271D6FB /* Pods-NWAAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0854B558F3AD1A8944FA2F3 /* Pods-NWAAlertController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NWAAlertController_Example-resources.sh"; sourceTree = "<group>"; };
+		F0F07C3A081B56CE6555F3B8 /* Pods-NWAAlertController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NWAAlertController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F2389BCDBF22603A53BB6790 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
+		F291430D5378553A5A90D8D8 /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
+		F2AD502F4C37C2F3F19C76EB /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Quick/Example.swift; sourceTree = "<group>"; };
+		F78B84D7D01D221A975A99F2 /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
+		F7A0D9BF0FF73BF5E4269C5E /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Nimble/Expression.swift; sourceTree = "<group>"; };
+		FCE2E6526E98C58D8EA5C9B3 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Quick/DSL/QCKDSL.m; sourceTree = "<group>"; };
+		FED0D6921EB5B5964B701EA9 /* Pods-NWAAlertController_Tests-NWAAlertController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWAAlertController_Tests-NWAAlertController-Private.xcconfig"; path = "../Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController-Private.xcconfig"; sourceTree = "<group>"; };
+		FFFF8E859806A7EB0F608999 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Quick/Configuration/Configuration.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BACFB2471F45CA11CFC1999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D92F773774B683FFA24917 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274DD9FBD102248C7565E02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB9B6E5D7AE48F48255714C /* Foundation.framework in Frameworks */,
+				F7AF91702891885BF68DF23B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A3F2A3164B0D7E39D489C50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2E0A25D339DEB37316FB5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31ED5C86EA42AE2C78F3097F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413AA8E13024F7F31A546825 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444760323A3ABE1A6397957B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91FB974BDD8F712619AD4D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86AE574D4DD3D82A9B82F4F9 /* Foundation.framework in Frameworks */,
+				F99A298369547871A1B6787B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CF20B151E9A57FF8D6BCC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB744E2B42D8521B3E2E350 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F656E2197C230D2086E963E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0982479AD7E2A1C2CA707818 /* NWAAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				72D8969C7CE89D670CE6FFB5 /* Pod */,
+				7E1816F48BAB1D27EAD1FABC /* Support Files */,
+			);
+			name = NWAAlertController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		348C6BAF81B761FF566BD69C /* Quick */ = {
+			isa = PBXGroup;
+			children = (
+				5627F7F2A4F22303C447F5A8 /* Callsite.swift */,
+				F291430D5378553A5A90D8D8 /* Closures.swift */,
+				FFFF8E859806A7EB0F608999 /* Configuration.swift */,
+				6FE5BE1405600FA61FAE4F9A /* DSL.swift */,
+				F2AD502F4C37C2F3F19C76EB /* Example.swift */,
+				A101144A777914A379E141CA /* ExampleGroup.swift */,
+				44D2C60E06C6FCE58562E8A5 /* ExampleHooks.swift */,
+				54237F70C629462494A23E1E /* ExampleMetadata.swift */,
+				85EBD9301843E85C6ED6054A /* Filter.swift */,
+				06CDFF48B338C40F289BF616 /* NSString+QCKSelectorName.h */,
+				1B18501704DD4CB4878E8FFB /* NSString+QCKSelectorName.m */,
+				A04C78C2536B868C02F27FA0 /* QCKDSL.h */,
+				FCE2E6526E98C58D8EA5C9B3 /* QCKDSL.m */,
+				2C3DB3CA94FE363D7781D876 /* Quick.h */,
+				58CA2D42788EE3C2F5B20D81 /* QuickConfiguration.h */,
+				AB09D4891E5EAE2DD2873712 /* QuickConfiguration.m */,
+				AD75E4BA06448D4DC675D623 /* QuickSpec.h */,
+				EB84A97C2EDC009D6E626BC8 /* QuickSpec.m */,
+				CF1CDB416326DE0D6C6926A2 /* SuiteHooks.swift */,
+				938CC047A8237621E16AE4C2 /* World.h */,
+				AF9EAD2E95D55148BFC58EE7 /* World.swift */,
+				CD7A21B6B372BF0297953913 /* World+DSL.h */,
+				0F2299EC86D05B702E0BE676 /* World+DSL.swift */,
+				DEF4291A9285FA7C53786EC1 /* Support Files */,
+			);
+			path = Quick;
+			sourceTree = "<group>";
+		};
+		3AD39DBBC475C8FE4BE9D733 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0982479AD7E2A1C2CA707818 /* NWAAlertController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		52F4191E4BA97887FBFAA09C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E39AFD868A84AE23977C2A39 /* Nimble */,
+				348C6BAF81B761FF566BD69C /* Quick */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72D8969C7CE89D670CE6FFB5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CA4D1FCE91A5890BA7C2107D /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		78B9A290D160A507A841F11A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35468A59C6B2A53883A3343C /* NWAAlertController.bundle */,
+				4F13E09277F137165FD5E6B7 /* NWAAlertController.bundle */,
+				ABE539872A7016D712F2AECB /* NWAAlertController.framework */,
+				32CA26E98907BC1D3B52FC1B /* NWAAlertController.framework */,
+				A08F5AB79C6B884E78243669 /* Nimble.framework */,
+				6047699DDDA2208940F502C6 /* Pods_NWAAlertController_Example.framework */,
+				4A8563780C433224C7917DE7 /* Pods_NWAAlertController_Tests.framework */,
+				44DFD11FC4E661C33B3B2D26 /* Quick.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E1816F48BAB1D27EAD1FABC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1A1CADBA5B58E4404F1CA77 /* Info.plist */,
+				8172A8ACE0C41AB88004173C /* Info.plist */,
+				E60B564C74C214F68FECE1AE /* Pods-NWAAlertController_Example-NWAAlertController.modulemap */,
+				9AE3B6EEE094F0D58B04A5C3 /* Pods-NWAAlertController_Example-NWAAlertController.xcconfig */,
+				ED2B972BFB093AEEB310C26D /* Pods-NWAAlertController_Example-NWAAlertController-Private.xcconfig */,
+				9E45EA834E669C3A2DBBD05B /* Pods-NWAAlertController_Example-NWAAlertController-dummy.m */,
+				A61F796AADD62D822955A25D /* Pods-NWAAlertController_Example-NWAAlertController-prefix.pch */,
+				802CEDC492D65D463084E16A /* Pods-NWAAlertController_Example-NWAAlertController-umbrella.h */,
+				14B86B8E75F5D31F9EA5CEA2 /* Pods-NWAAlertController_Tests-NWAAlertController.modulemap */,
+				81599C4BBE9CCF2281B093E8 /* Pods-NWAAlertController_Tests-NWAAlertController.xcconfig */,
+				FED0D6921EB5B5964B701EA9 /* Pods-NWAAlertController_Tests-NWAAlertController-Private.xcconfig */,
+				DCAE54651FFEDEA655E2326C /* Pods-NWAAlertController_Tests-NWAAlertController-dummy.m */,
+				D06E470F3600050AD2C1C913 /* Pods-NWAAlertController_Tests-NWAAlertController-prefix.pch */,
+				55CBE4D66F0FABF73770BC80 /* Pods-NWAAlertController_Tests-NWAAlertController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-NWAAlertController_Example-NWAAlertController";
+			sourceTree = "<group>";
+		};
+		BD46D2715A4461BA8710DE94 = {
+			isa = PBXGroup;
+			children = (
+				80938065E3E7185CC82AF37A /* Podfile */,
+				3AD39DBBC475C8FE4BE9D733 /* Development Pods */,
+				D1836176878019EF6BAF4292 /* Frameworks */,
+				52F4191E4BA97887FBFAA09C /* Pods */,
+				78B9A290D160A507A841F11A /* Products */,
+				D92C5C267CDE4F7BE26270A9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CA4D1FCE91A5890BA7C2107D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				846BF8DA7FB72B074E72DD6E /* ReplaceMe.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D1836176878019EF6BAF4292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7025DCE36A906243510BE13 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D48510D8B157B7FB9A6896D3 /* Pods-NWAAlertController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A7AB39F8BEFB3E54E5E59C5A /* Info.plist */,
+				946BB9150AAFCC9AD22D708B /* Pods-NWAAlertController_Tests.modulemap */,
+				A0A7629054756CD53E3AFD1C /* Pods-NWAAlertController_Tests-acknowledgements.markdown */,
+				29FB6AAA6EC1D7F425A339FE /* Pods-NWAAlertController_Tests-acknowledgements.plist */,
+				E43B2F18FE70D42859175FBD /* Pods-NWAAlertController_Tests-dummy.m */,
+				5424E1D3CF629CF0D84F8CD0 /* Pods-NWAAlertController_Tests-environment.h */,
+				27094CC3346740DBAFB8BCCC /* Pods-NWAAlertController_Tests-frameworks.sh */,
+				6933261F08CA10ADBCD74386 /* Pods-NWAAlertController_Tests-resources.sh */,
+				2A095104B2DA0DA195A71A10 /* Pods-NWAAlertController_Tests-umbrella.h */,
+				EF9F10F97BF5F72E9271D6FB /* Pods-NWAAlertController_Tests.debug.xcconfig */,
+				676CBED40B703A90328F2454 /* Pods-NWAAlertController_Tests.release.xcconfig */,
+			);
+			name = "Pods-NWAAlertController_Tests";
+			path = "Target Support Files/Pods-NWAAlertController_Tests";
+			sourceTree = "<group>";
+		};
+		D7025DCE36A906243510BE13 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D62F0CBE2A865AA7E25E0F7F /* Foundation.framework */,
+				A44CC17D68AEA930CA8EFDCA /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D92C5C267CDE4F7BE26270A9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FABB10B3D5DCB258F2ABCD20 /* Pods-NWAAlertController_Example */,
+				D48510D8B157B7FB9A6896D3 /* Pods-NWAAlertController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DEF4291A9285FA7C53786EC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FBCFCD2E81EABED08DCF9BE /* Info.plist */,
+				9DCB98BEC0C8627EC247E096 /* Pods-NWAAlertController_Tests-Quick.modulemap */,
+				DC83612624A21B01FB1CA724 /* Pods-NWAAlertController_Tests-Quick.xcconfig */,
+				885351A56F93A3031B205413 /* Pods-NWAAlertController_Tests-Quick-Private.xcconfig */,
+				0B22AE15D0D83D8951B3A710 /* Pods-NWAAlertController_Tests-Quick-dummy.m */,
+				266678660343238E87B6508E /* Pods-NWAAlertController_Tests-Quick-prefix.pch */,
+				CB3A1A9DF80DF44E32EF497F /* Pods-NWAAlertController_Tests-Quick-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-NWAAlertController_Tests-Quick";
+			sourceTree = "<group>";
+		};
+		E39AFD868A84AE23977C2A39 /* Nimble */ = {
+			isa = PBXGroup;
+			children = (
+				E592B262E327BE6634E0A63D /* AdapterProtocols.swift */,
+				09AD0311B1291668A0E82C33 /* AllPass.swift */,
+				0D7CD672A9289ADFBB91AA5F /* AssertionDispatcher.swift */,
+				7B2FB0B7435845EE1D898C31 /* AssertionRecorder.swift */,
+				834CBEFCBFC497C344795714 /* AsyncMatcherWrapper.swift */,
+				7760C205613549EB749F0BC3 /* BeAKindOf.swift */,
+				2AADE2AB55E85D72926ACF4F /* BeAnInstanceOf.swift */,
+				65978241BF04A898AB20114B /* BeCloseTo.swift */,
+				CDC27070C2C4DCE635809AEC /* BeEmpty.swift */,
+				9759D078736741DF864F4A71 /* BeGreaterThan.swift */,
+				BB4A3A118EA89E19C8F1B852 /* BeGreaterThanOrEqualTo.swift */,
+				F78B84D7D01D221A975A99F2 /* BeIdenticalTo.swift */,
+				45F9A089177032289BDBB7A9 /* BeLessThan.swift */,
+				053070D95F2F9E92E581D333 /* BeLessThanOrEqual.swift */,
+				50C5ABE5E152D732EFB28475 /* BeLogical.swift */,
+				3B822C6A17F88193DFDACDD2 /* BeNil.swift */,
+				F2389BCDBF22603A53BB6790 /* BeginWith.swift */,
+				247C707F28BBCB48DF75328E /* Contain.swift */,
+				044226C4379E06BA708B8753 /* DSL.h */,
+				2D8D936731E38C6A459D05F4 /* DSL.m */,
+				83A123FD6DF9C0FA91A43797 /* DSL.swift */,
+				9A7E61FD5F889FC0D4E11AE6 /* DSL+Wait.swift */,
+				0FD945D79437E802979ED321 /* EndWith.swift */,
+				60ADED559D4D5188E2DB90BB /* Equal.swift */,
+				9E08DF26D90DB7D99CEC09EF /* Expectation.swift */,
+				F7A0D9BF0FF73BF5E4269C5E /* Expression.swift */,
+				B82FBA3889A0AED4446C8CB1 /* FailureMessage.swift */,
+				DE50A97AB444E56A8BA59DF2 /* Functional.swift */,
+				A7F2500758B21413C788B074 /* Match.swift */,
+				2C52B02B9DC2969EC46A6353 /* MatcherFunc.swift */,
+				90258639B0B68FAC5CCF6BD4 /* MatcherProtocols.swift */,
+				EBF53A928863DCC1CBB413C2 /* NMBExceptionCapture.h */,
+				ED042174AB4281E8712E9D09 /* NMBExceptionCapture.m */,
+				3D58747AE972954E66F32AA9 /* Nimble.h */,
+				9281EBFAFF9F4EC04BD522BA /* NimbleXCTestHandler.swift */,
+				DA43258EA4DA7629795F5302 /* ObjCExpectation.swift */,
+				D48DFE4F1BAB6E878F847F90 /* ObjCMatcher.swift */,
+				5A428AECB3FA3ADA6AD181C6 /* Poll.swift */,
+				55B16E0E32C5B711073AEB77 /* RaisesException.swift */,
+				B0FFEB0C0D6EA8B77F28111B /* SourceLocation.swift */,
+				459C13CBC1A823C028B46535 /* Stringers.swift */,
+				E4BBBD0D736D2D18967F2980 /* Support Files */,
+			);
+			path = Nimble;
+			sourceTree = "<group>";
+		};
+		E4BBBD0D736D2D18967F2980 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C158C93C5BD995D6508E42D /* Info.plist */,
+				BF6DA8912634300615FC09A5 /* Pods-NWAAlertController_Tests-Nimble.modulemap */,
+				3BA6E15377377FFEBE5E6961 /* Pods-NWAAlertController_Tests-Nimble.xcconfig */,
+				C79195F029A6FCE6CFD84066 /* Pods-NWAAlertController_Tests-Nimble-Private.xcconfig */,
+				632FAA181A3BCB06037E5100 /* Pods-NWAAlertController_Tests-Nimble-dummy.m */,
+				4D91C9D8322394BA8591D9FE /* Pods-NWAAlertController_Tests-Nimble-prefix.pch */,
+				EF787A7370E62983168AE1F2 /* Pods-NWAAlertController_Tests-Nimble-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-NWAAlertController_Tests-Nimble";
+			sourceTree = "<group>";
+		};
+		FABB10B3D5DCB258F2ABCD20 /* Pods-NWAAlertController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9BE847F99523B8EC3A0E698B /* Info.plist */,
+				A24791683283108C37B0C369 /* Pods-NWAAlertController_Example.modulemap */,
+				D06091778F02EB920F805075 /* Pods-NWAAlertController_Example-acknowledgements.markdown */,
+				0F7DF9151B8869160F842CC8 /* Pods-NWAAlertController_Example-acknowledgements.plist */,
+				AF14B5CCDAC702A7B18FB026 /* Pods-NWAAlertController_Example-dummy.m */,
+				49059D075A35237487318BD9 /* Pods-NWAAlertController_Example-environment.h */,
+				F0F07C3A081B56CE6555F3B8 /* Pods-NWAAlertController_Example-frameworks.sh */,
+				F0854B558F3AD1A8944FA2F3 /* Pods-NWAAlertController_Example-resources.sh */,
+				7E5044D3D21C9DFE9AAED7A2 /* Pods-NWAAlertController_Example-umbrella.h */,
+				C65242305535AC3B94301BDB /* Pods-NWAAlertController_Example.debug.xcconfig */,
+				C0F25E36AB9B4522FB082D87 /* Pods-NWAAlertController_Example.release.xcconfig */,
+			);
+			name = "Pods-NWAAlertController_Example";
+			path = "Target Support Files/Pods-NWAAlertController_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		292341CBBECAB0B7E0742301 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3434C9C7D8ABB79D6CF6C4F /* Pods-NWAAlertController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C74FDD36F6A6CCBBE394747 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581D96A3EB1BE974CF2FDAAB /* Pods-NWAAlertController_Tests-NWAAlertController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04CB06162312901418E284C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFE62312A240567E83A2BA7 /* DSL.h in Headers */,
+				98DA5442CC76DD7CD19A4B27 /* NMBExceptionCapture.h in Headers */,
+				8E43AD9B63B39513569E9A5A /* Nimble.h in Headers */,
+				2D5D33F52F17EA3F987FC407 /* Pods-NWAAlertController_Tests-Nimble-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC1C0B6FFE988623DDE6ED7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1418403E5B63638E713F9B29 /* Pods-NWAAlertController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7FE20A208D53760A964CFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46013DDDFA72BB71EA0BB0FC /* Pods-NWAAlertController_Example-NWAAlertController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE1D99DC474057042A3EB570 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C1D9E12E34DA69533C0CF0 /* NSString+QCKSelectorName.h in Headers */,
+				3919F9A8C9401E425514312C /* Pods-NWAAlertController_Tests-Quick-umbrella.h in Headers */,
+				1A1DB8D17EB90CAE0323F523 /* QCKDSL.h in Headers */,
+				5D6A1FC2DF467E49065FDC5E /* Quick.h in Headers */,
+				222703BC33068E9721A94D81 /* QuickConfiguration.h in Headers */,
+				AF0CC350EB631888AE884C9D /* QuickSpec.h in Headers */,
+				E52192DF3CB4C8C3D94F0665 /* World+DSL.h in Headers */,
+				AE8C07B16BCC98456E696622 /* World.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10F18EC2F108801486FD0069 /* Pods-NWAAlertController_Tests-NWAAlertController-NWAAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D656C60040EB1ED454B8A0E /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Tests-NWAAlertController-NWAAlertController" */;
+			buildPhases = (
+				C5D415FC1BD615FE0D0EAF28 /* Sources */,
+				444760323A3ABE1A6397957B /* Frameworks */,
+				552AD12B823FCCE6D0993BC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NWAAlertController_Tests-NWAAlertController-NWAAlertController";
+			productName = "Pods-NWAAlertController_Tests-NWAAlertController-NWAAlertController";
+			productReference = 35468A59C6B2A53883A3343C /* NWAAlertController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		25EBA86F9933B547FEA3473B /* Pods-NWAAlertController_Tests-NWAAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66E1F694F578F008B3F66F96 /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Tests-NWAAlertController" */;
+			buildPhases = (
+				0943135F5B95A07071F0EE06 /* Sources */,
+				31ED5C86EA42AE2C78F3097F /* Frameworks */,
+				4489E782F31CCA96951DD2E1 /* Resources */,
+				3C74FDD36F6A6CCBBE394747 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1E9545BB7696089281CC8D1 /* PBXTargetDependency */,
+			);
+			name = "Pods-NWAAlertController_Tests-NWAAlertController";
+			productName = "Pods-NWAAlertController_Tests-NWAAlertController";
+			productReference = ABE539872A7016D712F2AECB /* NWAAlertController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2EDB810D6F94800C151F5B95 /* Pods-NWAAlertController_Tests-Quick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 066A131E5E671E99760AD1DA /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Tests-Quick" */;
+			buildPhases = (
+				04CC8C100E40937903C94131 /* Sources */,
+				274DD9FBD102248C7565E02B /* Frameworks */,
+				DE1D99DC474057042A3EB570 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NWAAlertController_Tests-Quick";
+			productName = "Pods-NWAAlertController_Tests-Quick";
+			productReference = 44DFD11FC4E661C33B3B2D26 /* Quick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		363F3FD5A81BD4FB324BE791 /* Pods-NWAAlertController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F964E95FB6E1178FBB5B4CA /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Example" */;
+			buildPhases = (
+				2D3FB001F67872E96643EF0A /* Sources */,
+				0BACFB2471F45CA11CFC1999 /* Frameworks */,
+				CC1C0B6FFE988623DDE6ED7B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				656C60CFCEB4195D14C2BF68 /* PBXTargetDependency */,
+			);
+			name = "Pods-NWAAlertController_Example";
+			productName = "Pods-NWAAlertController_Example";
+			productReference = 6047699DDDA2208940F502C6 /* Pods_NWAAlertController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6539F14299AC11567DAF83F1 /* Pods-NWAAlertController_Example-NWAAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90DD15B63BBFA0E6A769F466 /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Example-NWAAlertController" */;
+			buildPhases = (
+				814A1271B4A6733FD3484B39 /* Sources */,
+				C6CF20B151E9A57FF8D6BCC0 /* Frameworks */,
+				2B58475ADC858C44C939C6B2 /* Resources */,
+				CE7FE20A208D53760A964CFC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C241F13567BD55FD2F154180 /* PBXTargetDependency */,
+			);
+			name = "Pods-NWAAlertController_Example-NWAAlertController";
+			productName = "Pods-NWAAlertController_Example-NWAAlertController";
+			productReference = 32CA26E98907BC1D3B52FC1B /* NWAAlertController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68F8A33B5BBB2026620C687B /* Pods-NWAAlertController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F88B0897E3E67CA53055841F /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Tests" */;
+			buildPhases = (
+				F54C8729F2B9FE2B596E9D01 /* Sources */,
+				2A3F2A3164B0D7E39D489C50 /* Frameworks */,
+				292341CBBECAB0B7E0742301 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3908069094BADAAF242E824 /* PBXTargetDependency */,
+				24D7F0052886A1D9608C4881 /* PBXTargetDependency */,
+				4A81CC9F44B6E20347FD8A6F /* PBXTargetDependency */,
+			);
+			name = "Pods-NWAAlertController_Tests";
+			productName = "Pods-NWAAlertController_Tests";
+			productReference = 4A8563780C433224C7917DE7 /* Pods_NWAAlertController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		703F6C544422E1DD280512B8 /* Pods-NWAAlertController_Tests-Nimble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20B7DC78B55CE356FFDE70A3 /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Tests-Nimble" */;
+			buildPhases = (
+				2400CC56219D8F1D71A1C86C /* Sources */,
+				91FB974BDD8F712619AD4D68 /* Frameworks */,
+				A04CB06162312901418E284C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NWAAlertController_Tests-Nimble";
+			productName = "Pods-NWAAlertController_Tests-Nimble";
+			productReference = A08F5AB79C6B884E78243669 /* Nimble.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF635B75726A4F2B53CA1430 /* Pods-NWAAlertController_Example-NWAAlertController-NWAAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E06FC528998AA7E6927A9B /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Example-NWAAlertController-NWAAlertController" */;
+			buildPhases = (
+				598B4155B2D0CFE4D626B441 /* Sources */,
+				F656E2197C230D2086E963E1 /* Frameworks */,
+				41FE92648FDEA63A600E1A23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NWAAlertController_Example-NWAAlertController-NWAAlertController";
+			productName = "Pods-NWAAlertController_Example-NWAAlertController-NWAAlertController";
+			productReference = 4F13E09277F137165FD5E6B7 /* NWAAlertController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5975701290AFF42D95A133BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 651508426C417C030247BCCB /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BD46D2715A4461BA8710DE94;
+			productRefGroup = 78B9A290D160A507A841F11A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				363F3FD5A81BD4FB324BE791 /* Pods-NWAAlertController_Example */,
+				6539F14299AC11567DAF83F1 /* Pods-NWAAlertController_Example-NWAAlertController */,
+				EF635B75726A4F2B53CA1430 /* Pods-NWAAlertController_Example-NWAAlertController-NWAAlertController */,
+				68F8A33B5BBB2026620C687B /* Pods-NWAAlertController_Tests */,
+				25EBA86F9933B547FEA3473B /* Pods-NWAAlertController_Tests-NWAAlertController */,
+				10F18EC2F108801486FD0069 /* Pods-NWAAlertController_Tests-NWAAlertController-NWAAlertController */,
+				703F6C544422E1DD280512B8 /* Pods-NWAAlertController_Tests-Nimble */,
+				2EDB810D6F94800C151F5B95 /* Pods-NWAAlertController_Tests-Quick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B58475ADC858C44C939C6B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC375E249F0B590A9D75953F /* NWAAlertController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41FE92648FDEA63A600E1A23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4489E782F31CCA96951DD2E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB986B6C997AF0981ED629F /* NWAAlertController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		552AD12B823FCCE6D0993BC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CC8C100E40937903C94131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6474AF8FE881FBC8FBBC07 /* Callsite.swift in Sources */,
+				247E81DC84FD17101E8C0804 /* Closures.swift in Sources */,
+				386BE9652580D36A366416E0 /* Configuration.swift in Sources */,
+				9CE4800D2628294A994AE665 /* DSL.swift in Sources */,
+				9BB0D5B887F6A2402D30DAAD /* Example.swift in Sources */,
+				AF2D25DF9597BA0E925BCA4C /* ExampleGroup.swift in Sources */,
+				31858213BDE188830BD90BE1 /* ExampleHooks.swift in Sources */,
+				26FE36347257255F2AC6E5B9 /* ExampleMetadata.swift in Sources */,
+				2E3F6D890815BFD5B9BA029F /* Filter.swift in Sources */,
+				EEB067CB07B1387EE5D9A81B /* NSString+QCKSelectorName.m in Sources */,
+				5A6EEB96771E4DFD1FC98170 /* Pods-NWAAlertController_Tests-Quick-dummy.m in Sources */,
+				BF5B6802BDD73B7EB3D9E3B6 /* QCKDSL.m in Sources */,
+				988D1FAEED0A218B7E9B254D /* QuickConfiguration.m in Sources */,
+				5E768463C626210690969557 /* QuickSpec.m in Sources */,
+				5579C37E463B09C190883E3B /* SuiteHooks.swift in Sources */,
+				DF3C5A4FD7AA064F87E8EFFA /* World+DSL.swift in Sources */,
+				B8C4C58E4380CD4782635631 /* World.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0943135F5B95A07071F0EE06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FC4B2748DC78810B6BA9A3 /* Pods-NWAAlertController_Tests-NWAAlertController-dummy.m in Sources */,
+				4FE3084C2E7B690AE8335FCF /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2400CC56219D8F1D71A1C86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA3E87320F20D62EE17FF08 /* AdapterProtocols.swift in Sources */,
+				350E892BD6D38A30C195A108 /* AllPass.swift in Sources */,
+				771C40EB1CD6ED059B9CFC84 /* AssertionDispatcher.swift in Sources */,
+				9DDBB1BCB09321E205F7998F /* AssertionRecorder.swift in Sources */,
+				EA876671C8651FF3CFB94E5E /* AsyncMatcherWrapper.swift in Sources */,
+				230B1E3CED8FE4575D401A3E /* BeAKindOf.swift in Sources */,
+				51A1FAF2953E12F9D8FD7E8E /* BeAnInstanceOf.swift in Sources */,
+				0C4158274AF3C5AE3841C799 /* BeCloseTo.swift in Sources */,
+				080E6C5C18B8CCBAD842E99C /* BeEmpty.swift in Sources */,
+				98D2181E3CB1EFFB5796B463 /* BeGreaterThan.swift in Sources */,
+				48B49030BD240A094DE14101 /* BeGreaterThanOrEqualTo.swift in Sources */,
+				48C713176905C71E12C9C533 /* BeIdenticalTo.swift in Sources */,
+				A1516122D166E8B2EED7EECC /* BeLessThan.swift in Sources */,
+				9C99DA3F3BB1DE99FF17A30F /* BeLessThanOrEqual.swift in Sources */,
+				F2BA97471D66CD7BC6980205 /* BeLogical.swift in Sources */,
+				E43C63062D775651B19C0395 /* BeNil.swift in Sources */,
+				91E41B7BB4017A39AF61CF56 /* BeginWith.swift in Sources */,
+				318F589EE0304B7EA187529C /* Contain.swift in Sources */,
+				BCEC55E987322D526BE8B71E /* DSL+Wait.swift in Sources */,
+				C7A97F521D8FA56E551781B0 /* DSL.m in Sources */,
+				CD56C14FD03E6250B24332A4 /* DSL.swift in Sources */,
+				ADD3C23A9E5CCCFFF4FE1638 /* EndWith.swift in Sources */,
+				7C2AE70CAFA53F941A71C4C0 /* Equal.swift in Sources */,
+				604F79BE2D347C90502C8C8D /* Expectation.swift in Sources */,
+				F8322DCE1B8B4BF835818113 /* Expression.swift in Sources */,
+				DF73D1A263923BD9A080EF0D /* FailureMessage.swift in Sources */,
+				2DD058444B1AE4BD3903BC1E /* Functional.swift in Sources */,
+				C76A3144BBD1348702973BAE /* Match.swift in Sources */,
+				3E3882CA9EE37BECB55FE19B /* MatcherFunc.swift in Sources */,
+				0881557D98807A381085512E /* MatcherProtocols.swift in Sources */,
+				6D67C9B8DF7A71134604EB20 /* NMBExceptionCapture.m in Sources */,
+				24188530893AC1337232A57A /* NimbleXCTestHandler.swift in Sources */,
+				76B0F1E5558E017C91540B00 /* ObjCExpectation.swift in Sources */,
+				14CAE7197840828B271C6EB9 /* ObjCMatcher.swift in Sources */,
+				BD3B3A2B48AA58F21682193C /* Pods-NWAAlertController_Tests-Nimble-dummy.m in Sources */,
+				0F73902E374B2704FF56700E /* Poll.swift in Sources */,
+				4307365E14D0306F78A70E79 /* RaisesException.swift in Sources */,
+				21C7FA5CA2E3A0B3546BF21F /* SourceLocation.swift in Sources */,
+				BA437B2B27C04EBCFB753600 /* Stringers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D3FB001F67872E96643EF0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94469FB5049194B3EC48B714 /* Pods-NWAAlertController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		598B4155B2D0CFE4D626B441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814A1271B4A6733FD3484B39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B614B0A34B3267BE93D259 /* Pods-NWAAlertController_Example-NWAAlertController-dummy.m in Sources */,
+				FCFE4D5E31E82A81AB27623C /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D415FC1BD615FE0D0EAF28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54C8729F2B9FE2B596E9D01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87515F04CA8EE14A3316D77 /* Pods-NWAAlertController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24D7F0052886A1D9608C4881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NWAAlertController_Tests-Nimble";
+			target = 703F6C544422E1DD280512B8 /* Pods-NWAAlertController_Tests-Nimble */;
+			targetProxy = BC52A191C936D0A72BD641E4 /* PBXContainerItemProxy */;
+		};
+		4A81CC9F44B6E20347FD8A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NWAAlertController_Tests-Quick";
+			target = 2EDB810D6F94800C151F5B95 /* Pods-NWAAlertController_Tests-Quick */;
+			targetProxy = B467A76D0195E698D1C92E3F /* PBXContainerItemProxy */;
+		};
+		656C60CFCEB4195D14C2BF68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NWAAlertController_Example-NWAAlertController";
+			target = 6539F14299AC11567DAF83F1 /* Pods-NWAAlertController_Example-NWAAlertController */;
+			targetProxy = 8A1396417F0076D57FBD664D /* PBXContainerItemProxy */;
+		};
+		B1E9545BB7696089281CC8D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NWAAlertController_Tests-NWAAlertController-NWAAlertController";
+			target = 10F18EC2F108801486FD0069 /* Pods-NWAAlertController_Tests-NWAAlertController-NWAAlertController */;
+			targetProxy = 8399433ECC4CF5F762E03097 /* PBXContainerItemProxy */;
+		};
+		C241F13567BD55FD2F154180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NWAAlertController_Example-NWAAlertController-NWAAlertController";
+			target = EF635B75726A4F2B53CA1430 /* Pods-NWAAlertController_Example-NWAAlertController-NWAAlertController */;
+			targetProxy = B04685CFD273C07094F2B55D /* PBXContainerItemProxy */;
+		};
+		E3908069094BADAAF242E824 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NWAAlertController_Tests-NWAAlertController";
+			target = 25EBA86F9933B547FEA3473B /* Pods-NWAAlertController_Tests-NWAAlertController */;
+			targetProxy = E4759D17DD4AB3855319D969 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		110A9F7C2BEBDADFB5BB1D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F25E36AB9B4522FB082D87 /* Pods-NWAAlertController_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Example/Pods-NWAAlertController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_NWAAlertController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		19578CCCB3C6B28B2D2D3840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885351A56F93A3031B205413 /* Pods-NWAAlertController_Tests-Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NWAAlertController_Tests-Quick/Pods-NWAAlertController_Tests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Tests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Tests-Quick/Pods-NWAAlertController_Tests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1ABE842D42731ED351C3F4E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24EB8D9E8232A7EF2D3E3171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED0D6921EB5B5964B701EA9 /* Pods-NWAAlertController_Tests-NWAAlertController-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-NWAAlertController_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = NWAAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		42382E4664D90222CE12151E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885351A56F93A3031B205413 /* Pods-NWAAlertController_Tests-Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NWAAlertController_Tests-Quick/Pods-NWAAlertController_Tests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Tests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Tests-Quick/Pods-NWAAlertController_Tests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C01FD807CD199B9E0CBB4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C79195F029A6FCE6CFD84066 /* Pods-NWAAlertController_Tests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NWAAlertController_Tests-Nimble/Pods-NWAAlertController_Tests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Tests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Tests-Nimble/Pods-NWAAlertController_Tests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F62467DC544CB8C5948690F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED0D6921EB5B5964B701EA9 /* Pods-NWAAlertController_Tests-NWAAlertController-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-NWAAlertController_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = NWAAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		857D4152CA16741278CCF02D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B9BD0922FBA53A0230B1ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676CBED40B703A90328F2454 /* Pods-NWAAlertController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Tests/Pods-NWAAlertController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_NWAAlertController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A286C102CA6846C0659FF66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C79195F029A6FCE6CFD84066 /* Pods-NWAAlertController_Tests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NWAAlertController_Tests-Nimble/Pods-NWAAlertController_Tests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Tests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Tests-Nimble/Pods-NWAAlertController_Tests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A28D867944E2CA09B96F4CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2B972BFB093AEEB310C26D /* Pods-NWAAlertController_Example-NWAAlertController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NWAAlertController_Example-NWAAlertController/Pods-NWAAlertController_Example-NWAAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Example-NWAAlertController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Example-NWAAlertController/Pods-NWAAlertController_Example-NWAAlertController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NWAAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3D5DFD85CE7D377DB7A2C42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED0D6921EB5B5964B701EA9 /* Pods-NWAAlertController_Tests-NWAAlertController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Tests-NWAAlertController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NWAAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C044A05CBE0795B50DD01FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED0D6921EB5B5964B701EA9 /* Pods-NWAAlertController_Tests-NWAAlertController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Tests-NWAAlertController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NWAAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C192E54BD5CFA9DDC30F5CCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2B972BFB093AEEB310C26D /* Pods-NWAAlertController_Example-NWAAlertController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NWAAlertController_Example-NWAAlertController/Pods-NWAAlertController_Example-NWAAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Example-NWAAlertController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Example-NWAAlertController/Pods-NWAAlertController_Example-NWAAlertController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NWAAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5A06D9F25362A29AE8EDFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2B972BFB093AEEB310C26D /* Pods-NWAAlertController_Example-NWAAlertController-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-NWAAlertController_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = NWAAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F3CEB5E30BD6F37CD420CC99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2B972BFB093AEEB310C26D /* Pods-NWAAlertController_Example-NWAAlertController-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-NWAAlertController_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = NWAAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FC423B551AFB01A7C4401931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65242305535AC3B94301BDB /* Pods-NWAAlertController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Example/Pods-NWAAlertController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_NWAAlertController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FCBDFC1306B23BF9BCDCC79C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9F10F97BF5F72E9271D6FB /* Pods-NWAAlertController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NWAAlertController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NWAAlertController_Tests/Pods-NWAAlertController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_NWAAlertController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		066A131E5E671E99760AD1DA /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Tests-Quick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42382E4664D90222CE12151E /* Debug */,
+				19578CCCB3C6B28B2D2D3840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F964E95FB6E1178FBB5B4CA /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC423B551AFB01A7C4401931 /* Debug */,
+				110A9F7C2BEBDADFB5BB1D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20B7DC78B55CE356FFDE70A3 /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Tests-Nimble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C01FD807CD199B9E0CBB4B0 /* Debug */,
+				A286C102CA6846C0659FF66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D656C60040EB1ED454B8A0E /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Tests-NWAAlertController-NWAAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EB8D9E8232A7EF2D3E3171 /* Debug */,
+				7F62467DC544CB8C5948690F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651508426C417C030247BCCB /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				857D4152CA16741278CCF02D /* Debug */,
+				1ABE842D42731ED351C3F4E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66E1F694F578F008B3F66F96 /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Tests-NWAAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3D5DFD85CE7D377DB7A2C42 /* Debug */,
+				C044A05CBE0795B50DD01FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E06FC528998AA7E6927A9B /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Example-NWAAlertController-NWAAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CEB5E30BD6F37CD420CC99 /* Debug */,
+				D5A06D9F25362A29AE8EDFAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90DD15B63BBFA0E6A769F466 /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Example-NWAAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28D867944E2CA09B96F4CA4 /* Debug */,
+				C192E54BD5CFA9DDC30F5CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F88B0897E3E67CA53055841F /* Build configuration list for PBXNativeTarget "Pods-NWAAlertController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBDFC1306B23BF9BCDCC79C /* Debug */,
+				8B9BD0922FBA53A0230B1ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5975701290AFF42D95A133BF /* Project object */;
+}

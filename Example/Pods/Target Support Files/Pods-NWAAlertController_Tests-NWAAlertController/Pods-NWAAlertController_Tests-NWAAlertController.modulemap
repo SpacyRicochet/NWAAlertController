@@ -1,0 +1,6 @@
+framework module NWAAlertController {
+  umbrella header "Pods-NWAAlertController_Tests-NWAAlertController-umbrella.h"
+
+  export *
+  module * { export * }
+}
