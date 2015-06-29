@@ -37,7 +37,7 @@
 		46013DDDFA72BB71EA0BB0FC /* Pods-NWAAlertController_Example-NWAAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 802CEDC492D65D463084E16A /* Pods-NWAAlertController_Example-NWAAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48B49030BD240A094DE14101 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A3A118EA89E19C8F1B852 /* BeGreaterThanOrEqualTo.swift */; };
 		48C713176905C71E12C9C533 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B84D7D01D221A975A99F2 /* BeIdenticalTo.swift */; };
-		4FE3084C2E7B690AE8335FCF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BF8DA7FB72B074E72DD6E /* ReplaceMe.swift */; };
+		4FE3084C2E7B690AE8335FCF /* NWAAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BF8DA7FB72B074E72DD6E /* NWAAlertController.swift */; };
 		51A1FAF2953E12F9D8FD7E8E /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AADE2AB55E85D72926ACF4F /* BeAnInstanceOf.swift */; };
 		54D92F773774B683FFA24917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62F0CBE2A865AA7E25E0F7F /* Foundation.framework */; };
 		5579C37E463B09C190883E3B /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CDB416326DE0D6C6926A2 /* SuiteHooks.swift */; };
@@ -93,7 +93,7 @@
 		F7AF91702891885BF68DF23B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44CC17D68AEA930CA8EFDCA /* XCTest.framework */; };
 		F8322DCE1B8B4BF835818113 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0D9BF0FF73BF5E4269C5E /* Expression.swift */; };
 		F99A298369547871A1B6787B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44CC17D68AEA930CA8EFDCA /* XCTest.framework */; };
-		FCFE4D5E31E82A81AB27623C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BF8DA7FB72B074E72DD6E /* ReplaceMe.swift */; };
+		FCFE4D5E31E82A81AB27623C /* NWAAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BF8DA7FB72B074E72DD6E /* NWAAlertController.swift */; };
 		FD6474AF8FE881FBC8FBBC07 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627F7F2A4F22303C447F5A8 /* Callsite.swift */; };
 /* End PBXBuildFile section */
 
@@ -201,7 +201,7 @@
 		8172A8ACE0C41AB88004173C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-NWAAlertController_Tests-NWAAlertController/Info.plist"; sourceTree = "<group>"; };
 		834CBEFCBFC497C344795714 /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Nimble/Wrappers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
 		83A123FD6DF9C0FA91A43797 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
-		846BF8DA7FB72B074E72DD6E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		846BF8DA7FB72B074E72DD6E /* NWAAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NWAAlertController.swift; sourceTree = "<group>"; };
 		85EBD9301843E85C6ED6054A /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Quick/Filter.swift; sourceTree = "<group>"; };
 		885351A56F93A3031B205413 /* Pods-NWAAlertController_Tests-Quick-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NWAAlertController_Tests-Quick-Private.xcconfig"; sourceTree = "<group>"; };
 		90258639B0B68FAC5CCF6BD4 /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
@@ -457,7 +457,7 @@
 		CA4D1FCE91A5890BA7C2107D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				846BF8DA7FB72B074E72DD6E /* ReplaceMe.swift */,
+				846BF8DA7FB72B074E72DD6E /* NWAAlertController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -819,6 +819,7 @@
 		5975701290AFF42D95A133BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 			};
 			buildConfigurationList = 651508426C417C030247BCCB /* Build configuration list for PBXProject "Pods" */;
@@ -908,7 +909,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3FC4B2748DC78810B6BA9A3 /* Pods-NWAAlertController_Tests-NWAAlertController-dummy.m in Sources */,
-				4FE3084C2E7B690AE8335FCF /* ReplaceMe.swift in Sources */,
+				4FE3084C2E7B690AE8335FCF /* NWAAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -978,7 +979,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64B614B0A34B3267BE93D259 /* Pods-NWAAlertController_Example-NWAAlertController-dummy.m in Sources */,
-				FCFE4D5E31E82A81AB27623C /* ReplaceMe.swift in Sources */,
+				FCFE4D5E31E82A81AB27623C /* NWAAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
