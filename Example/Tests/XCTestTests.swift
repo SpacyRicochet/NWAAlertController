@@ -29,7 +29,7 @@ class XCTestTests: XCTestCase {
     }
     
     func testAlertControllerWhenChangedShouldMatchNewTitle() {
-//        alertController?.title = "Test 2"
+        alertController?.title = "Test 2"
         XCTAssertNotNil(alertController?.title)
         if let title = alertController?.title {
             XCTAssertNotEqual(title, "Test 1")
@@ -48,7 +48,7 @@ class XCTestTests: XCTestCase {
         }
         
         self.waitForExpectationsWithTimeout(0.1) { (error) -> Void in
-            XCTAssertEqual(time, "not done")
+            XCTAssertEqual(time, "done")
         }
     }
 }
