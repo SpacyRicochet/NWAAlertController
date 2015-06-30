@@ -40,6 +40,9 @@ public class NWAAlertController : UIViewController {
         self.init(preferredStyle: preferredStyle)
         self.message = message
         self.title = title
+        
+        self.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        self.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
     }
     
     init(preferredStyle: UIAlertControllerStyle)
@@ -67,11 +70,12 @@ public class NWAAlertController : UIViewController {
     
     public func addTextFieldWithConfigurationHandler(configurationHandler: ((UITextField) -> Void)?)
     {
-        
+        fatalError("addTextFieldWithConfigurationHandler: has not been implemented yet")
     }
     
     public var textFields: [UITextField]? {
         get {
+            print("TextFields are not implemented yet.")
             return nil
         }
     }
@@ -84,14 +88,74 @@ public class NWAAlertController : UIViewController {
         }
     }
     
+    // MARK: - View lifecycle
+    
+    public override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        print(self.view.subviews)
+    }
+    
     // MARK: - Creating the view
     
-    public override func loadView() {
+    public override func loadView()
+    {
         let view = UIView(frame: CGRectZero)
         
-        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
+        setupDismissTapGestureRecognizerOnView(view)
+        
+        let alertView = alertViewWithTitle(self.title, message: self.message, actions: self.actions, onView: view)
+        view.addSubview(alertView)
+        
         
         self.view = view
     }
+    
+    private func alertViewWithTitle(title: String?, message: String?, actions: [UIAlertAction], onView view: UIView) -> UIView
+    {
+        var subviews: [UIView] = []
+        
+        if let title = title {
+            let label = UILabel(frame: CGRectZero)
+            label.text = title
+            label.font = UIFont.boldSystemFontOfSize(20)
+            subviews += [label]
+        }
+        
+        if let message = message {
+            let label = UILabel(frame: CGRectZero)
+            label.text = message
+            label.font = UIFont.systemFontOfSize(17)
+            subviews += [label]
+        }
+        
+        for action in actions {
+            let button = UIButton(type: .System)
+            button.setTitle(action.title, forState: .Normal)
+            subviews += [button]
+        }
+        
+        let stackView = UIStackView(arrangedSubviews: subviews)
+        
+        let backgroundView = UIView()
+        backgroundView.frame = CGRectMake(0, 0, 20, 20)
+        backgroundView.backgroundColor = UIColor.whiteColor()
+        stackView.addSubview(backgroundView)
+        
+        return stackView
+    }
+    
+    // MARK: - Dismiss alert controller
+    
+    private func setupDismissTapGestureRecognizerOnView(view: UIView)
+    {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "tapGestureRecognizerTriggered:")
+        view.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    func tapGestureRecognizerTriggered(sender: UITapGestureRecognizer)
+    {
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
-

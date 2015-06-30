@@ -25,13 +25,18 @@ class ViewController: UIViewController {
     
     @IBAction func showUIAlertControllerTapped(sender: AnyObject)
     {
-        let alertController = UIAlertController(title: "Test", message: nil, preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "Test", message: "This is what we want to create as a first alert view.", preferredStyle: .Alert)
+        
+        alertController.addAction(UIAlertAction(title: "Dismiss this view", style: .Default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
+        
         self.presentViewController(alertController, animated: true, completion: nil)
     }
 
     @IBAction func showNWAAlertControllerTapped(sender: AnyObject)
     {
-        let alertController = NWAAlertController(title: "Test", message: nil, preferredStyle: .Alert)
+        let alertController = NWAAlertController(title: "Test", message: "This is what we want to create as a first alert view.", preferredStyle: .Alert)
+        
         self.presentViewController(alertController, animated: true, completion: nil)
     }
 }

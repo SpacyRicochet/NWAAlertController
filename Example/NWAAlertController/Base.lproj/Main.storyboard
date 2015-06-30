@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -12,36 +13,62 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" tag="10" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-Nk-T1i">
-                                <rect key="frame" x="208" y="285" width="185" height="30"/>
-                                <state key="normal" title="Show NWA Alert Controller"/>
-                                <connections>
-                                    <action selector="showNWAAlertControllerTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="39h-mQ-a7i"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qji-hd-FGc">
-                                <rect key="frame" x="208" y="247" width="184" height="30"/>
-                                <state key="normal" title="Show UIKit Alert Controller"/>
-                                <connections>
-                                    <action selector="showUIAlertControllerTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Yg-dn-HoL"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypU-re-TBC" userLabel="Stack Background View">
+                                <rect key="frame" x="109" y="233" width="382" height="135"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" layoutMarginsRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PK4-WG-Jiv">
+                                <rect key="frame" x="109" y="233" width="382" height="135"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppL-GV-8RS">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is what we want to create as a first alert view." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnM-O1-f2w">
+                                        <rect key="frame" x="0.0" y="34" width="382" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qji-hd-FGc">
+                                        <rect key="frame" x="0.0" y="65" width="382" height="30"/>
+                                        <state key="normal" title="Show UIKit Alert Controller"/>
+                                        <connections>
+                                            <action selector="showUIAlertControllerTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Yg-dn-HoL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-Nk-T1i">
+                                        <rect key="frame" x="0.0" y="105" width="382" height="30"/>
+                                        <state key="normal" title="Show NWA Alert Controller"/>
+                                        <connections>
+                                            <action selector="showNWAAlertControllerTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="39h-mQ-a7i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bbc-Nk-T1i" firstAttribute="top" secondItem="Qji-hd-FGc" secondAttribute="bottom" constant="8" id="3sY-M9-09Q"/>
-                            <constraint firstItem="Qji-hd-FGc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Fgq-Qs-tWz"/>
-                            <constraint firstItem="bbc-Nk-T1i" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="J7X-nV-EbM"/>
-                            <constraint firstItem="bbc-Nk-T1i" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fbm-Ta-tYv"/>
+                            <constraint firstItem="ypU-re-TBC" firstAttribute="centerX" secondItem="PK4-WG-Jiv" secondAttribute="centerX" id="Aia-GD-9Lt"/>
+                            <constraint firstItem="ypU-re-TBC" firstAttribute="width" secondItem="PK4-WG-Jiv" secondAttribute="width" id="Xf6-Ci-c4L"/>
+                            <constraint firstItem="ypU-re-TBC" firstAttribute="height" secondItem="PK4-WG-Jiv" secondAttribute="height" id="b3S-H8-alb"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="PK4-WG-Jiv" secondAttribute="trailing" id="co7-Q2-I7u"/>
+                            <constraint firstItem="PK4-WG-Jiv" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="qcz-0f-GGY"/>
+                            <constraint firstItem="PK4-WG-Jiv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="s7q-tW-F5s"/>
+                            <constraint firstItem="ypU-re-TBC" firstAttribute="centerY" secondItem="PK4-WG-Jiv" secondAttribute="centerY" id="sTp-kP-x8Q"/>
+                            <constraint firstItem="PK4-WG-Jiv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="wki-yJ-RgB"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="474" y="522"/>
         </scene>
     </scenes>
 </document>

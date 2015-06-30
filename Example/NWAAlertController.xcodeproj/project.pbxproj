@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		238788051B418312002CC27C /* XCTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238788041B418312002CC27C /* XCTestTests.swift */; };
 		238788071B429A8C002CC27C /* NWAAlertControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238788061B429A8C002CC27C /* NWAAlertControllerTests.swift */; };
+		23EF53191B42BFE300A7CD02 /* NWAAlertControllerDismissTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EF52CF1B42BC9B00A7CD02 /* NWAAlertControllerDismissTests.swift */; };
 		329706C23229DE87869F8952 /* Pods_NWAAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72AB7EF336B4A802E7EE340 /* Pods_NWAAlertController_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -20,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		23EF53141B42BFD100A7CD02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = NWAAlertController_Example;
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -33,6 +41,9 @@
 		2333514830FFAE9B151FBA18 /* Pods-NWAAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWAAlertController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NWAAlertController_Example/Pods-NWAAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		238788041B418312002CC27C /* XCTestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestTests.swift; sourceTree = "<group>"; };
 		238788061B429A8C002CC27C /* NWAAlertControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWAAlertControllerTests.swift; sourceTree = "<group>"; };
+		23EF52CF1B42BC9B00A7CD02 /* NWAAlertControllerDismissTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NWAAlertControllerDismissTests.swift; path = ../Tests/NWAAlertControllerDismissTests.swift; sourceTree = "<group>"; };
+		23EF530F1B42BFD100A7CD02 /* NWAAlertController_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NWAAlertController_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EF53131B42BFD100A7CD02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		590170AD04C538BEB290BBAA /* Pods-NWAAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWAAlertController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NWAAlertController_Example/Pods-NWAAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NWAAlertController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NWAAlertController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +65,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23EF530C1B42BFD100A7CD02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +91,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23EF53101B42BFD100A7CD02 /* UI Tests */ = {
+			isa = PBXGroup;
+			children = (
+				23EF52CF1B42BC9B00A7CD02 /* NWAAlertControllerDismissTests.swift */,
+				23EF53131B42BFD100A7CD02 /* Info.plist */,
+			);
+			name = "UI Tests";
+			path = NWAAlertController_UITests;
+			sourceTree = "<group>";
+		};
 		446853B17B3E01875EEC2299 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +127,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for NWAAlertController */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				23EF53101B42BFD100A7CD02 /* UI Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				4B35FDDEADC452024ACF1939 /* Pods */,
 				446853B17B3E01875EEC2299 /* Frameworks */,
@@ -110,6 +139,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* NWAAlertController_Example.app */,
 				607FACE51AFB9204008FA782 /* NWAAlertController_Tests.xctest */,
+				23EF530F1B42BFD100A7CD02 /* NWAAlertController_UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +198,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		23EF530E1B42BFD100A7CD02 /* NWAAlertController_UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23EF53161B42BFD100A7CD02 /* Build configuration list for PBXNativeTarget "NWAAlertController_UITests" */;
+			buildPhases = (
+				23EF530B1B42BFD100A7CD02 /* Sources */,
+				23EF530C1B42BFD100A7CD02 /* Frameworks */,
+				23EF530D1B42BFD100A7CD02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23EF53151B42BFD100A7CD02 /* PBXTargetDependency */,
+			);
+			name = NWAAlertController_UITests;
+			productName = NWAAlertController_UITests;
+			productReference = 23EF530F1B42BFD100A7CD02 /* NWAAlertController_UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		607FACCF1AFB9204008FA782 /* NWAAlertController_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NWAAlertController_Example" */;
@@ -219,6 +267,10 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					23EF530E1B42BFD100A7CD02 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
@@ -243,11 +295,19 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* NWAAlertController_Example */,
 				607FACE41AFB9204008FA782 /* NWAAlertController_Tests */,
+				23EF530E1B42BFD100A7CD02 /* NWAAlertController_UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		23EF530D1B42BFD100A7CD02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +421,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		23EF530B1B42BFD100A7CD02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EF53191B42BFE300A7CD02 /* NWAAlertControllerDismissTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,6 +451,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		23EF53151B42BFD100A7CD02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* NWAAlertController_Example */;
+			targetProxy = 23EF53141B42BFD100A7CD02 /* PBXContainerItemProxy */;
+		};
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* NWAAlertController_Example */;
@@ -410,6 +483,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		23EF53171B42BFD100A7CD02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = NWAAlertController_UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noodlewerk.NWAAlertController-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NWAAlertController_Example;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		23EF53181B42BFD100A7CD02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NWAAlertController_UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noodlewerk.NWAAlertController-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NWAAlertController_Example;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -554,6 +653,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		23EF53161B42BFD100A7CD02 /* Build configuration list for PBXNativeTarget "NWAAlertController_UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EF53171B42BFD100A7CD02 /* Debug */,
+				23EF53181B42BFD100A7CD02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "NWAAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
