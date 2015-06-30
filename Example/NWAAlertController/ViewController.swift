@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NWAAlertController
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - User Interaction
+    
+    @IBAction func showUIAlertControllerTapped(sender: AnyObject)
+    {
+        let alertController = UIAlertController(title: "Test", message: nil, preferredStyle: .Alert)
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
 
+    @IBAction func showNWAAlertControllerTapped(sender: AnyObject)
+    {
+        let alertController = NWAAlertController(title: "Test", message: nil, preferredStyle: .Alert)
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
 }
-

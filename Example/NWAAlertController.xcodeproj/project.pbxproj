@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		238788051B418312002CC27C /* XCTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238788041B418312002CC27C /* XCTestTests.swift */; };
+		238788071B429A8C002CC27C /* NWAAlertControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238788061B429A8C002CC27C /* NWAAlertControllerTests.swift */; };
 		329706C23229DE87869F8952 /* Pods_NWAAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72AB7EF336B4A802E7EE340 /* Pods_NWAAlertController_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		2333514830FFAE9B151FBA18 /* Pods-NWAAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWAAlertController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NWAAlertController_Example/Pods-NWAAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		238788041B418312002CC27C /* XCTestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestTests.swift; sourceTree = "<group>"; };
+		238788061B429A8C002CC27C /* NWAAlertControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWAAlertControllerTests.swift; sourceTree = "<group>"; };
 		590170AD04C538BEB290BBAA /* Pods-NWAAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWAAlertController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NWAAlertController_Example/Pods-NWAAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NWAAlertController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NWAAlertController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				607FACEB1AFB9204008FA782 /* QuickTests.swift */,
 				238788041B418312002CC27C /* XCTestTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				238788061B429A8C002CC27C /* NWAAlertControllerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				238788051B418312002CC27C /* XCTestTests.swift in Sources */,
+				238788071B429A8C002CC27C /* NWAAlertControllerTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* QuickTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

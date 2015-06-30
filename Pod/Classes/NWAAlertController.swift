@@ -31,15 +31,14 @@ public class NWAAlertController : UIViewController {
     
     // Private stored variables.
     private var __preferredStyle: UIAlertControllerStyle
-    private var __message: String?
     private var __actions: [UIAlertAction] = []
     
-    // Public methods; Equivalents of UIAlertController
+    // MARK: - UIAlertController Public methods
     
     public convenience init(title: String?, message: String?, preferredStyle: UIAlertControllerStyle)
     {
         self.init(preferredStyle: preferredStyle)
-        self.__message = message
+        self.message = message
         self.title = title
     }
     
@@ -55,12 +54,12 @@ public class NWAAlertController : UIViewController {
     
     public func addAction(action: UIAlertAction)
     {
-        
+        __actions += [action]
     }
     
     public var actions: [UIAlertAction] {
-        get{
-            return []
+        get {
+            return __actions
         }
     }
     
@@ -81,10 +80,18 @@ public class NWAAlertController : UIViewController {
     
     public var preferredStyle: UIAlertControllerStyle {
         get {
-            return UIAlertControllerStyle.Alert
+            return __preferredStyle
         }
     }
     
+    // MARK: - Creating the view
     
+    public override func loadView() {
+        let view = UIView(frame: CGRectZero)
+        
+        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+        
+        self.view = view
+    }
 }
 

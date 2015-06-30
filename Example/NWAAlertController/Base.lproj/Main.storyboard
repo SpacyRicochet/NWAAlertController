@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NWAAlertController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +15,29 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-Nk-T1i">
+                                <rect key="frame" x="208" y="285" width="185" height="30"/>
+                                <state key="normal" title="Show NWA Alert Controller"/>
+                                <connections>
+                                    <action selector="showNWAAlertControllerTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="39h-mQ-a7i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qji-hd-FGc">
+                                <rect key="frame" x="208" y="247" width="184" height="30"/>
+                                <state key="normal" title="Show UIKit Alert Controller"/>
+                                <connections>
+                                    <action selector="showUIAlertControllerTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Yg-dn-HoL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bbc-Nk-T1i" firstAttribute="top" secondItem="Qji-hd-FGc" secondAttribute="bottom" constant="8" id="3sY-M9-09Q"/>
+                            <constraint firstItem="Qji-hd-FGc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Fgq-Qs-tWz"/>
+                            <constraint firstItem="bbc-Nk-T1i" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="J7X-nV-EbM"/>
+                            <constraint firstItem="bbc-Nk-T1i" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fbm-Ta-tYv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
