@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypU-re-TBC" userLabel="Stack Background View">
-                                <rect key="frame" x="165" y="196" width="270" height="207"/>
+                                <rect key="frame" x="165" y="197" width="270" height="207"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PK4-WG-Jiv">
-                                <rect key="frame" x="165" y="196.5" width="270" height="207"/>
+                                <rect key="frame" x="165" y="197" width="270" height="207"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7H-MO-Obp">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="40"/>
