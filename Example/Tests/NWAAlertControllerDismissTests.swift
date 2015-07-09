@@ -36,11 +36,12 @@ class NWAAlertControllerDismissTests: XCTestCase {
         let showNwaAlertControllerButton = app.buttons["Show NWA Alert Controller"]
         showNwaAlertControllerButton.tap()
         
-        let backgroundView = app.windows.childrenMatchingType(.Unknown).elementAtIndex(1).childrenMatchingType(.Unknown).elementAtIndex(0)
+        let backgroundView = app.windows.childrenMatchingType(.Unknown).elementBoundByIndex(1).childrenMatchingType(.Unknown).element
         XCTAssertEqual(backgroundView.exists, true)
         
         backgroundView.tap()
         XCTAssertEqual(backgroundView.exists, false)
+        
     }
 
 }
