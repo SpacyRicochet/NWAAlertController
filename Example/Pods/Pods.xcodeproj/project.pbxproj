@@ -19,6 +19,8 @@
 		21C7FA5CA2E3A0B3546BF21F /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FFEB0C0D6EA8B77F28111B /* SourceLocation.swift */; };
 		222703BC33068E9721A94D81 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 58CA2D42788EE3C2F5B20D81 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		230B1E3CED8FE4575D401A3E /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7760C205613549EB749F0BC3 /* BeAKindOf.swift */; };
+		23A189511B56A81400E8C9D0 /* NWAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A189501B56A81400E8C9D0 /* NWAButton.swift */; };
+		23A189521B56A81400E8C9D0 /* NWAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A189501B56A81400E8C9D0 /* NWAButton.swift */; };
 		24188530893AC1337232A57A /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281EBFAFF9F4EC04BD522BA /* NimbleXCTestHandler.swift */; };
 		247E81DC84FD17101E8C0804 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291430D5378553A5A90D8D8 /* Closures.swift */; };
 		26FE36347257255F2AC6E5B9 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54237F70C629462494A23E1E /* ExampleMetadata.swift */; };
@@ -155,6 +157,7 @@
 		0FD945D79437E802979ED321 /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
 		14B86B8E75F5D31F9EA5CEA2 /* Pods-NWAAlertController_Tests-NWAAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-NWAAlertController_Tests-NWAAlertController.modulemap"; path = "../Pods-NWAAlertController_Tests-NWAAlertController/Pods-NWAAlertController_Tests-NWAAlertController.modulemap"; sourceTree = "<group>"; };
 		1B18501704DD4CB4878E8FFB /* NSString+QCKSelectorName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+QCKSelectorName.m"; path = "Quick/NSString+QCKSelectorName.m"; sourceTree = "<group>"; };
+		23A189501B56A81400E8C9D0 /* NWAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWAButton.swift; sourceTree = "<group>"; };
 		247C707F28BBCB48DF75328E /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
 		266678660343238E87B6508E /* Pods-NWAAlertController_Tests-Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NWAAlertController_Tests-Quick-prefix.pch"; sourceTree = "<group>"; };
 		27094CC3346740DBAFB8BCCC /* Pods-NWAAlertController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NWAAlertController_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -458,6 +461,7 @@
 			isa = PBXGroup;
 			children = (
 				846BF8DA7FB72B074E72DD6E /* NWAAlertController.swift */,
+				23A189501B56A81400E8C9D0 /* NWAButton.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -909,6 +913,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3FC4B2748DC78810B6BA9A3 /* Pods-NWAAlertController_Tests-NWAAlertController-dummy.m in Sources */,
+				23A189521B56A81400E8C9D0 /* NWAButton.swift in Sources */,
 				4FE3084C2E7B690AE8335FCF /* NWAAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -979,6 +984,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64B614B0A34B3267BE93D259 /* Pods-NWAAlertController_Example-NWAAlertController-dummy.m in Sources */,
+				23A189511B56A81400E8C9D0 /* NWAButton.swift in Sources */,
 				FCFE4D5E31E82A81AB27623C /* NWAAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
