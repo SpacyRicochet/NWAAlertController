@@ -44,6 +44,13 @@ class ViewController: UIViewController {
     {
         let alertController = NWAAlertController(title: "Test", message: "This is what we want to create as a first alert view.", preferredStyle: .Alert)
         
+        alertController.addAction(NWAAlertAction(title: "Dismiss this view", style: .Default) { (action) -> Void in
+            print("Dismiss tapped")
+            })
+        alertController.addAction(NWAAlertAction(title: "Cancel", style: .Default) { (action) -> Void in
+            print("Cancel tapped")
+            })
+        
         self.presentViewController(alertController, animated: true, completion: nil)
     }
 }

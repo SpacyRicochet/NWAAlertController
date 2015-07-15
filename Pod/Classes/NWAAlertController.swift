@@ -26,14 +26,36 @@ import UIKit
 //    var enabled: Bool
 //}
 
+// MARK: - NWAAlertAction
+
 @available(iOS 9.0, *)
-public class NWAAlertController : UIViewController {
+public class NWAAlertAction {
+    
+    var title: String?
+    var style: UIAlertActionStyle = .Default
+    var handler: ((NWAAlertAction) -> Void)?
+    
+    public init() {}
+    public init(title: String?, style: UIAlertActionStyle, handler: ((NWAAlertAction) -> Void)?)
+    {
+        self.title = title
+        self.style = style
+        self.handler = handler
+    }
+}
+
+// MARK: - NWAAlertController
+
+@available(iOS 9.0, *)
+public class NWAAlertController : UIViewController
+{
+    private var actionMapping: Dictionary<UIButton, NWAAlertAction> = [:]
     
     // Private stored variables.
     private var __preferredStyle: UIAlertControllerStyle
-    private var __actions: [UIAlertAction] = []
+    private var __actions: [NWAAlertAction] = []
     
-    // MARK: - UIAlertController Public methods
+    // MARK: UIAlertController Public methods
     
     public convenience init(title: String?, message: String?, preferredStyle: UIAlertControllerStyle)
     {
@@ -55,18 +77,18 @@ public class NWAAlertController : UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func addAction(action: UIAlertAction)
+    public func addAction(action: NWAAlertAction)
     {
         __actions += [action]
     }
     
-    public var actions: [UIAlertAction] {
+    public var actions: [NWAAlertAction] {
         get {
             return __actions
         }
     }
     
-    public var preferredAction: UIAlertAction?
+    public var preferredAction: NWAAlertAction?
     
     public func addTextFieldWithConfigurationHandler(configurationHandler: ((UITextField) -> Void)?)
     {
@@ -88,65 +110,101 @@ public class NWAAlertController : UIViewController {
         }
     }
     
-    // MARK: - View lifecycle
-    
-    public override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        print(self.view.subviews)
-    }
-    
-    // MARK: - Creating the view
+    // MARK: Creating the view
     
     public override func loadView()
     {
         let view = UIView(frame: CGRectZero)
+        view.backgroundColor = UIColor.clearColor()
         
-        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
-        setupDismissTapGestureRecognizerOnView(view)
+        let backgroundView = UIView()
+        backgroundView.translatesAutoresizingMaskIntoConstraints = false
+        backgroundView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.4)
+        view.insertSubview(backgroundView, atIndex: 0)
+        view.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 1.0, constant: 0.0))
+        view.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 1.0, constant: 0.0))
+        view.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .CenterX, relatedBy: .Equal, toItem: view, attribute: .CenterX, multiplier: 1.0, constant: 0.0))
+        view.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .CenterY, relatedBy: .Equal, toItem: view, attribute: .CenterY, multiplier: 1.0, constant: 0.0))
+
+        setupDismissTapGestureRecognizerOnView(backgroundView)
         
-        let alertView = alertViewWithTitle(self.title, message: self.message, actions: self.actions, onView: view)
+        let alertView = alertViewWithTitle(self.title, message: self.message, actions: self.actions)
+        alertView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(alertView)
         
+        alertView.addConstraint(NSLayoutConstraint(item: alertView, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: 270));
+        view.addConstraint(NSLayoutConstraint(item: alertView, attribute: .CenterX, relatedBy: .Equal, toItem: view, attribute: .CenterX, multiplier: 1.0, constant: 0.0))
+        view.addConstraint(NSLayoutConstraint(item: alertView, attribute: .CenterY, relatedBy: .Equal, toItem: view, attribute: .CenterY, multiplier: 1.0, constant: 0.0))
         
         self.view = view
     }
     
-    private func alertViewWithTitle(title: String?, message: String?, actions: [UIAlertAction], onView view: UIView) -> UIView
+    private func alertViewWithTitle(title: String?, message: String?, actions: [NWAAlertAction]) -> UIView
     {
         var subviews: [UIView] = []
         
         if let title = title {
             let label = UILabel(frame: CGRectZero)
+            label.textAlignment = NSTextAlignment.Center
             label.text = title
-            label.font = UIFont.boldSystemFontOfSize(20)
+            label.font = UIFont.boldSystemFontOfSize(17)
             subviews += [label]
         }
-        
+
         if let message = message {
             let label = UILabel(frame: CGRectZero)
+            label.textAlignment = NSTextAlignment.Center
             label.text = message
-            label.font = UIFont.systemFontOfSize(17)
+            label.font = UIFont.systemFontOfSize(13)
+            label.numberOfLines = 0
             subviews += [label]
         }
         
         for action in actions {
             let button = UIButton(type: .System)
             button.setTitle(action.title, forState: .Normal)
+            button.addTarget(self, action: "buttonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
             subviews += [button]
+            actionMapping[button] = action
         }
         
         let stackView = UIStackView(arrangedSubviews: subviews)
+        stackView.userInteractionEnabled = true
+        stackView.spacing = 12.0
+        stackView.layoutMargins = UIEdgeInsets(top: 8.0, left: 8.0, bottom: 8.0, right: 8.0)
+        stackView.layoutMarginsRelativeArrangement = true
+        stackView.axis = .Vertical
         
         let backgroundView = UIView()
-        backgroundView.frame = CGRectMake(0, 0, 20, 20)
-        backgroundView.backgroundColor = UIColor.whiteColor()
-        stackView.addSubview(backgroundView)
+        backgroundView.translatesAutoresizingMaskIntoConstraints = false
+        backgroundView.backgroundColor = UIColor(white: 0.97, alpha: 1.0)
+        backgroundView.layer.cornerRadius = 10.0
+        stackView.insertSubview(backgroundView, atIndex: 0)
+        
+        // Width and Height are reversed for the
+        stackView.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Width, relatedBy: .Equal, toItem: stackView, attribute: .Width, multiplier: 1.0, constant: 0.0))
+        stackView.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Height, relatedBy: .Equal, toItem: stackView, attribute: .Height, multiplier: 1.0, constant: 0.0))
+        stackView.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .CenterX, relatedBy: .Equal, toItem: stackView, attribute: .CenterX, multiplier: 1.0, constant: 0.0))
+        stackView.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .CenterY, relatedBy: .Equal, toItem: stackView, attribute: .CenterY, multiplier: 1.0, constant: 0.0))
         
         return stackView
     }
     
-    // MARK: - Dismiss alert controller
+    // MARK: Perform actions and dismiss alert controller
+    
+    func dismiss()
+    {
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func buttonTapped(sender: UIButton)
+    {
+        if let action = actionMapping[sender], let handler = action.handler {
+            handler(action)
+        }
+        dismiss()
+    }
+    
     
     private func setupDismissTapGestureRecognizerOnView(view: UIView)
     {
@@ -156,6 +214,6 @@ public class NWAAlertController : UIViewController {
     
     func tapGestureRecognizerTriggered(sender: UITapGestureRecognizer)
     {
-        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        dismiss()
     }
 }

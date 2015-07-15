@@ -56,11 +56,11 @@ class NWAAlertControllerSpec: QuickSpec
         }
         
         describe("AlertController has one action") {
-            var action: UIAlertAction?
+            var action: NWAAlertAction?
             
             beforeEach {
                 alertController = NWAAlertController(title: nil, message: nil, preferredStyle: .Alert)
-                action = UIAlertAction(title: "Action", style: .Default, handler: nil)
+                action = NWAAlertAction(title: "Action", style: .Default, handler: nil)
                 alertController?.addAction(action!)
             }
             
