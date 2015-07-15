@@ -60,7 +60,11 @@ class ViewController: UIViewController {
         alertController.overlayBackgroundColor = UIColor.redColor().colorWithAlphaComponent(0.4)
         alertController.alertBackgroundColor = UIColor.yellowColor()
         
-        alertController.addAction(NWAAlertAction(title: "Red background", style: .Default, handler: nil))
+        alertController.destructiveBackgroundColor = UIColor.greenColor()
+        alertController.destructiveTitleColor = UIColor.cyanColor()
+        
+        alertController.addAction(NWAAlertAction(title: "Destructive!", style: .Destructive, handler: nil))
+        alertController.addAction(NWAAlertAction(title: "Red background", style: .Cancel, handler: nil))
         alertController.addAction(NWAAlertAction(title: "Yellow alert", style: .Default, handler: nil))
         
         self.presentViewController(alertController, animated: true, completion: nil)

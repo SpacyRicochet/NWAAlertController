@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypU-re-TBC" userLabel="Stack Background View">
-                                <rect key="frame" x="165" y="193" width="270" height="215"/>
+                                <rect key="frame" x="165" y="119" width="270" height="363"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PK4-WG-Jiv">
-                                <rect key="frame" x="165" y="193" width="270" height="215"/>
+                                <rect key="frame" x="165" y="119" width="270" height="363"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCZ-tC-n5E">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="24"/>
@@ -36,8 +36,25 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="etp-JW-oNk">
+                                        <rect key="frame" x="0.0" y="85" width="270" height="128"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyx-Uq-Pvs">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="128"/>
+                                                <color key="backgroundColor" red="0.93801258480000005" green="0.67573837140000004" blue="0.088209558290000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1xU-nj-zsW">
+                                                <rect key="frame" x="90" y="0.0" width="90" height="128"/>
+                                                <color key="backgroundColor" red="0.10980392160000001" green="0.70980392160000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6F-bP-aio">
+                                                <rect key="frame" x="180" y="0.0" width="90" height="128"/>
+                                                <color key="backgroundColor" red="0.090196078430000007" green="0.61568627450000002" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qji-hd-FGc">
-                                        <rect key="frame" x="0.0" y="85" width="270" height="40"/>
+                                        <rect key="frame" x="0.0" y="223" width="270" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="eaD-DW-0uA"/>
                                         </constraints>
@@ -47,7 +64,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-Nk-T1i">
-                                        <rect key="frame" x="0.0" y="135" width="270" height="40"/>
+                                        <rect key="frame" x="0.0" y="273" width="270" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="GAb-1N-dfe"/>
                                         </constraints>
@@ -56,9 +73,29 @@
                                             <action selector="showNWAAlertControllerTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="39h-mQ-a7i"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ7-PI-Zv2">
-                                        <rect key="frame" x="0.0" y="185" width="270" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ7-PI-Zv2" customClass="NWAButton" customModule="NWAAlertController">
+                                        <rect key="frame" x="0.0" y="323" width="270" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="nUg-FE-qQz"/>
+                                        </constraints>
                                         <state key="normal" title="NWA with colors"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                <color key="value" red="0.93801258480000005" green="0.67573837140000004" blue="0.088209558290000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                                                <color key="value" red="1" green="0.36078431370000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                                <color key="value" red="0.78039215689999997" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="showNWAWithColorsTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tqd-BC-sm8"/>
                                         </connections>

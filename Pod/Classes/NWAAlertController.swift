@@ -52,6 +52,13 @@ public class NWAAlertController : UIViewController
     public var overlayBackgroundColor: UIColor = UIColor.blackColor().colorWithAlphaComponent(0.4)
     public var alertBackgroundColor: UIColor = UIColor(white: 0.97, alpha: 1.0)
     
+    public var defaultTitleColor: UIColor?
+    public var defaultBackgroundColor: UIColor?
+    public var cancelTitleColor: UIColor?
+    public var cancelBackgroundColor: UIColor?
+    public var destructiveTitleColor: UIColor? = UIColor.redColor()
+    public var destructiveBackgroundColor: UIColor?
+    
     private var actionMapping: Dictionary<UIButton, NWAAlertAction> = [:]
     
     // Private variables for read only getters.
@@ -164,11 +171,36 @@ public class NWAAlertController : UIViewController
         }
         
         for action in actions {
-            let button = UIButton(type: .System)
+            let button = NWAButton(type: .System)
             button.setTitle(action.title, forState: .Normal)
             button.addTarget(self, action: "buttonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
             subviews += [button]
             actionMapping[button] = action
+            
+            if action.style == .Default || action.style == .Cancel {
+                // We check for .Cancel here as well, in case the user hasn't set .Cancel explicitly. In that case, the color should be the same as in the default case.
+                if let color = defaultTitleColor {
+                    button.setTitleColor(color, forState: .Normal)
+                }
+                if let color = defaultBackgroundColor {
+                    button.normalBackgroundColor = color
+                }
+            }
+            if action.style == .Cancel {
+                // We repeat .Cancel here, in case the user has set this explicitly.
+                if let color = cancelTitleColor {
+                    button.setTitleColor(color, forState: .Normal)
+                }
+                if let color = cancelBackgroundColor {
+                    button.normalBackgroundColor = color
+                }
+            }
+            if action.style == .Destructive {
+                button.setTitleColor(destructiveTitleColor, forState: .Normal)
+                if let color = destructiveBackgroundColor {
+                    button.normalBackgroundColor = color
+                }
+            }
         }
         
         let stackView = UIStackView(arrangedSubviews: subviews)
@@ -184,7 +216,6 @@ public class NWAAlertController : UIViewController
         backgroundView.layer.cornerRadius = 10.0
         stackView.insertSubview(backgroundView, atIndex: 0)
         
-        // Width and Height are reversed for the
         stackView.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Width, relatedBy: .Equal, toItem: stackView, attribute: .Width, multiplier: 1.0, constant: 0.0))
         stackView.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Height, relatedBy: .Equal, toItem: stackView, attribute: .Height, multiplier: 1.0, constant: 0.0))
         stackView.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .CenterX, relatedBy: .Equal, toItem: stackView, attribute: .CenterX, multiplier: 1.0, constant: 0.0))
@@ -207,7 +238,6 @@ public class NWAAlertController : UIViewController
         }
         dismiss()
     }
-    
     
     private func setupDismissTapGestureRecognizerOnView(view: UIView)
     {
