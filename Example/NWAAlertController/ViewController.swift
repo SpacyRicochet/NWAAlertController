@@ -53,4 +53,16 @@ class ViewController: UIViewController {
         
         self.presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    @IBAction func showNWAWithColorsTapped(sender: AnyObject) {
+        let alertController = NWAAlertController(title: "Test", message: "This is what we want to create as a first alert view.", preferredStyle: .Alert)
+        
+        alertController.overlayBackgroundColor = UIColor.redColor().colorWithAlphaComponent(0.4)
+        alertController.alertBackgroundColor = UIColor.yellowColor()
+        
+        alertController.addAction(NWAAlertAction(title: "Red background", style: .Default, handler: nil))
+        alertController.addAction(NWAAlertAction(title: "Yellow alert", style: .Default, handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
 }

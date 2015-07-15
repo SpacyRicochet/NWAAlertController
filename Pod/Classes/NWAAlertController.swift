@@ -49,9 +49,12 @@ public class NWAAlertAction {
 @available(iOS 9.0, *)
 public class NWAAlertController : UIViewController
 {
+    public var overlayBackgroundColor: UIColor = UIColor.blackColor().colorWithAlphaComponent(0.4)
+    public var alertBackgroundColor: UIColor = UIColor(white: 0.97, alpha: 1.0)
+    
     private var actionMapping: Dictionary<UIButton, NWAAlertAction> = [:]
     
-    // Private stored variables.
+    // Private variables for read only getters.
     private var __preferredStyle: UIAlertControllerStyle
     private var __actions: [NWAAlertAction] = []
     
@@ -119,7 +122,7 @@ public class NWAAlertController : UIViewController
         
         let backgroundView = UIView()
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.4)
+        backgroundView.backgroundColor = overlayBackgroundColor
         view.insertSubview(backgroundView, atIndex: 0)
         view.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 1.0, constant: 0.0))
         view.addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 1.0, constant: 0.0))
@@ -177,7 +180,7 @@ public class NWAAlertController : UIViewController
         
         let backgroundView = UIView()
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundView.backgroundColor = UIColor(white: 0.97, alpha: 1.0)
+        backgroundView.backgroundColor = alertBackgroundColor
         backgroundView.layer.cornerRadius = 10.0
         stackView.insertSubview(backgroundView, atIndex: 0)
         
